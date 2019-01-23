@@ -1,0 +1,5 @@
+<map id="Ra::Core::TaskQueue::~TaskQueue" name="Ra::Core::TaskQueue::~TaskQueue">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1TaskQueue.html#a133a9b42dbb00afd3873b83a044c447f" title="Erases all tasks. Will assert if tasks are unprocessed. " alt="" coords="207,5,360,47"/>
+<area shape="rect" id="node4" href="$namespaceRa_1_1Core_1_1Geometry.html#aa04e6052d8911b1df1bd881474debb45" title="Ra::Core::Geometry::t" alt="" coords="408,71,568,98"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Utils_1_1Index.html#ac7a1b710e6b95834a562c27e2f6c0f4b" title="DESTRUCTOR: Must not be defined, we need it trivial to be constexpr. " alt="" coords="411,5,565,47"/>
+</map>

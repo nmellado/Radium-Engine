@@ -1,0 +1,5 @@
+<map id="Ra::Core::Geometry::TriangleMesh::copyAllAttributes" name="Ra::Core::Geometry::TriangleMesh::copyAllAttributes">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#a6ef9dbd18c0501f2ffd1316be6be56ce" title="Access the vertices positions. " alt="" coords="301,5,472,47"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Utils_1_1AttribManager.html#a406dc2c2d82a535130d7af3c388c7f8f" title="Copy all attributes from m. " alt="" coords="281,71,492,112"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Utils_1_1AttribManager.html#a0a49a4d134669b24642856717a1e5c5b" title="Get attribute by handle. " alt="" coords="540,71,751,112"/>
+</map>

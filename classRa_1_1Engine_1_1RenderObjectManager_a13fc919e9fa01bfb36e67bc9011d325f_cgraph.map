@@ -1,0 +1,4 @@
+<map id="Ra::Engine::RenderObjectManager::getRenderObject" name="Ra::Engine::RenderObjectManager::getRenderObject">
+<area shape="rect" id="node2" href="$classRa_1_1Engine_1_1RenderObjectManager.html#a088feae4339349a81b7b6635b38aead1" title="Returns true if the index points to a valid render object. " alt="" coords="245,5,428,47"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Utils_1_1Index.html#ac7a1b710e6b95834a562c27e2f6c0f4b" title="DESTRUCTOR: Must not be defined, we need it trivial to be constexpr. " alt="" coords="476,5,631,47"/>
+</map>

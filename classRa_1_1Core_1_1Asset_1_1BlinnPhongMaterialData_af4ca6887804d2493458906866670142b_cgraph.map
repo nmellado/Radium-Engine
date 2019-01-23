@@ -1,0 +1,16 @@
+<map id="Ra::Core::Asset::BlinnPhongMaterialData::displayInfo" name="Ra::Core::Asset::BlinnPhongMaterialData::displayInfo">
+<area shape="rect" id="node2" href="$namespaceRa_1_1Core.html#a805fadcc5c6849f92784f1d937e011d9" title="Ra::Core::print" alt="" coords="317,81,430,108"/>
+<area shape="rect" id="node7" href="$classRa_1_1Core_1_1Asset_1_1BlinnPhongMaterialData.html#ac33763dab1ff7fa17783e2c60deb25b3" title="QUERY. " alt="" coords="274,133,473,174"/>
+<area shape="rect" id="node8" href="$classRa_1_1Core_1_1Asset_1_1BlinnPhongMaterialData.html#a41b63f1d5925524fcc429b03a0c20337" title="Ra::Core::Asset::BlinnPhong\lMaterialData::hasSpecular" alt="" coords="274,198,473,239"/>
+<area shape="rect" id="node9" href="$classRa_1_1Core_1_1Asset_1_1BlinnPhongMaterialData.html#a06080a0b2dff920c9aa6ce25b95f727d" title="Ra::Core::Asset::BlinnPhong\lMaterialData::hasShininess" alt="" coords="274,263,473,305"/>
+<area shape="rect" id="node10" href="$classRa_1_1Core_1_1Asset_1_1BlinnPhongMaterialData.html#ae06bb26bc9eca185843f8255594f1a3c" title="Ra::Core::Asset::BlinnPhong\lMaterialData::hasOpacity" alt="" coords="274,329,473,370"/>
+<area shape="rect" id="node11" href="$classRa_1_1Core_1_1Asset_1_1BlinnPhongMaterialData.html#a9408fb258d77f8de7667551febf5bf8c" title="Ra::Core::Asset::BlinnPhong\lMaterialData::hasDiffuseTexture" alt="" coords="261,394,486,435"/>
+<area shape="rect" id="node12" href="$classRa_1_1Core_1_1Asset_1_1BlinnPhongMaterialData.html#a9b5f156e390267c38fd59354e6677ab4" title="Ra::Core::Asset::BlinnPhong\lMaterialData::hasSpecularTexture" alt="" coords="255,459,492,501"/>
+<area shape="rect" id="node13" href="$classRa_1_1Core_1_1Asset_1_1BlinnPhongMaterialData.html#a30e541b5ef080e4f90725042bd2badd0" title="Ra::Core::Asset::BlinnPhong\lMaterialData::hasShininessTexture" alt="" coords="252,525,495,566"/>
+<area shape="rect" id="node14" href="$classRa_1_1Core_1_1Asset_1_1BlinnPhongMaterialData.html#a146dba5b8011025549c0b3771b386ac4" title="Ra::Core::Asset::BlinnPhong\lMaterialData::hasNormalTexture" alt="" coords="259,590,487,631"/>
+<area shape="rect" id="node15" href="$classRa_1_1Core_1_1Asset_1_1BlinnPhongMaterialData.html#a2f0e63c332df6d02f9943db624b71d6d" title="Ra::Core::Asset::BlinnPhong\lMaterialData::hasOpacityTexture" alt="" coords="259,655,488,697"/>
+<area shape="rect" id="node3" href="$namespaceRa_1_1Core_1_1Vector.html#af564521564244ea832d4b66d9cff6fcc" title="Component&#45;wise floor() function on a floating&#45;point vector. " alt="" coords="548,5,709,32"/>
+<area shape="rect" id="node4" href="$namespaceRa_1_1Core_1_1Vector.html#a6469b383fbae679e862bb7b647bc9a42" title="Component&#45;wise ceil() function on a floating&#45;point vector. " alt="" coords="551,56,706,83"/>
+<area shape="rect" id="node5" href="$namespaceRa_1_1Core_1_1Vector.html#a9ee859e471c539559bec21b69ca4da7b" title="Component&#45;wise trunc() function on a floating&#45;point vector. " alt="" coords="545,107,712,133"/>
+<area shape="rect" id="node6" href="$namespaceRa_1_1Core_1_1Vector.html#a116499d254c6c8bab27bb6e3cdf22f90" title="Component&#45;wise clamp() function on a floating&#45;point vector. " alt="" coords="543,157,715,184"/>
+</map>

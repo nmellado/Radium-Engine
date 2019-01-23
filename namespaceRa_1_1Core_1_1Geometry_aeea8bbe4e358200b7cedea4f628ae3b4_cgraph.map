@@ -1,0 +1,5 @@
+<map id="Ra::Core::Geometry::pointToSegmentSq" name="Ra::Core::Geometry::pointToSegmentSq">
+<area shape="rect" id="node2" href="$namespaceRa_1_1Core_1_1Geometry.html#aa04e6052d8911b1df1bd881474debb45" title="Ra::Core::Geometry::t" alt="" coords="204,5,364,32"/>
+<area shape="rect" id="node3" href="$namespaceRa_1_1Core_1_1Geometry.html#a749ee9e81862ef200b0b7540cc1f16bc" title="Project point Q on segment AB defined by point A and vector AB = (B &#45;A). " alt="" coords="209,57,359,98"/>
+<area shape="rect" id="node4" href="$namespaceOpenMesh.html#a575b338f0fc9ecb5393d23e977e6ac38" title="OpenMesh::dot" alt="" coords="412,64,531,91"/>
+</map>

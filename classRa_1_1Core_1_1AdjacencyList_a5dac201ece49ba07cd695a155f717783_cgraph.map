@@ -1,0 +1,4 @@
+<map id="Ra::Core::AdjacencyList::computeConsistencyStatus" name="Ra::Core::AdjacencyList::computeConsistencyStatus">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1AdjacencyList.html#a15e425543855966a22c3b9339aa27b4d" title="Return the number of nodes in the graph. " alt="" coords="479,5,649,47"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1AdjacencyList.html#a068632657bfda6ab9034a879372a45e8" title="Return true if the node is a leaf node. " alt="" coords="260,35,431,76"/>
+</map>

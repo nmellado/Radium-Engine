@@ -1,0 +1,16 @@
+<map id="MeshPaintPlugin::MeshPaintPluginC::onCurrentChanged" name="MeshPaintPlugin::MeshPaintPluginC::onCurrentChanged">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Utils_1_1Index.html#a771f93efd49538950e3cb9e57e46fbaf" title="Ra::Core::Utils::Index\l::Invalid" alt="" coords="286,39,441,80"/>
+<area shape="rect" id="node4" href="$classRa_1_1GuiBase_1_1SelectionManager.html#a29cbd250208f1e18d2ab1e0f4d91105d" title="Return the current selected item, or an invalid entry if there is no current item. " alt="" coords="252,136,475,177"/>
+<area shape="rect" id="node8" href="$classMeshPaintPlugin_1_1MeshPaintSystem.html#ab738125913eddacce4f4a42150741f8e" title="MeshPaintPlugin::MeshPaint\lSystem::paintMesh" alt="" coords="264,201,463,243"/>
+<area shape="rect" id="node15" href="$classRa_1_1Gui_1_1PickingManager.html#a93bbe7807a11b0aa423ddcc777dc1168" title="Ra::Gui::PickingManager\l::getCurrent" alt="" coords="276,267,451,308"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Utils_1_1Index.html#ab3ba134498a9c2f1f3f9ccadd984a8e8" title="CONSTRUCTOR Default constructor that allow implicit conversion from integer to Index. " alt="" coords="557,5,711,47"/>
+<area shape="rect" id="node5" href="$classRa_1_1GuiBase_1_1SelectionManager.html#aec178a6b3de1c04e5e1d16ff72c6e966" title="Ra::GuiBase::SelectionManager\l::itemModel" alt="" coords="523,71,745,112"/>
+<area shape="rect" id="node6" href="$classRa_1_1GuiBase_1_1ItemModel.html#a3236433d461ad6cac5e9390b2685fa3f" title="Returns the entry corresponding to a given index or an invalid entry if the index doesn&#39;t match any e..." alt="" coords="547,136,721,177"/>
+<area shape="rect" id="node7" href="$classRa_1_1GuiBase_1_1TreeModel.html#a5aa24ace72c1c3d29e268cb34dc576f2" title="Get the tree item corresponding to the given index. " alt="" coords="804,119,975,160"/>
+<area shape="rect" id="node9" href="$classMeshPaintPlugin_1_1MeshPaintComponent.html#ad9bb2078c1824760a5394105ad9866e8" title="MeshPaintPlugin::MeshPaint\lComponent::paintMesh" alt="" coords="535,233,733,275"/>
+<area shape="rect" id="node10" href="$classRa_1_1Engine_1_1Component.html#a10b0bc182b76165744ebea603ae32dfe" title="Shortcut to access the render object manager. " alt="" coords="803,184,975,225"/>
+<area shape="rect" id="node11" href="$classRa_1_1Engine_1_1RenderObjectManager.html#a13fc919e9fa01bfb36e67bc9011d325f" title="Returns the render object corresponding to the given index. " alt="" coords="793,249,985,291"/>
+<area shape="rect" id="node14" href="$namespaceRa_1_1Core_1_1Geometry.html#aa04e6052d8911b1df1bd881474debb45" title="Ra::Core::Geometry::t" alt="" coords="809,315,969,342"/>
+<area shape="rect" id="node12" href="$classRa_1_1Engine_1_1RenderObjectManager.html#a088feae4339349a81b7b6635b38aead1" title="Returns true if the index points to a valid render object. " alt="" coords="1033,249,1216,291"/>
+<area shape="rect" id="node13" href="$classRa_1_1Core_1_1Utils_1_1Index.html#ac7a1b710e6b95834a562c27e2f6c0f4b" title="DESTRUCTOR: Must not be defined, we need it trivial to be constexpr. " alt="" coords="1264,249,1419,291"/>
+</map>

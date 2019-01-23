@@ -1,0 +1,6 @@
+<map id="Ra::IO::AssimpAnimationDataLoader::fetchTime" name="Ra::IO::AssimpAnimationDataLoader::fetchTime">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Animation_1_1AnimationTime.html#a4bf7c5506fe62e4bfcb26d49391d4bb8" title="Ra::Core::Animation\l::AnimationTime::setStart" alt="" coords="267,5,454,47"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Animation_1_1AnimationTime.html#a580eb83650065fd51d318abb4c79b563" title="Ra::Core::Animation\l::AnimationTime::setEnd" alt="" coords="271,71,450,112"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Asset_1_1AnimationData.html#afa3d60833227971fb049197741da0126" title="Ra::Core::Asset::Animation\lData::setTime" alt="" coords="264,136,457,177"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1Asset_1_1AnimationData.html#a830222af692dea0d510274b8537618f0" title="Ra::Core::Asset::Animation\lData::setTimeStep" alt="" coords="264,201,457,243"/>
+</map>

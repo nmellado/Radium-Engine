@@ -1,0 +1,8 @@
+<map id="Ra::Core::Geometry::TopologicalMesh::copyAllPropsFromFace" name="Ra::Core::Geometry::TopologicalMesh::copyAllPropsFromFace">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Geometry_1_1TopologicalMesh.html#a55f50a9118dee08fe611012b93dee3de" title="Copy the face normal property fProp from fh to heh. " alt="" coords="240,5,459,61"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Geometry_1_1TopologicalMesh.html#a489fcd771f3bf01c0e4ee1b7ebd738f8" title="Copy face properties props from fh to heh. " alt="" coords="246,85,453,141"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Geometry_1_1TopologicalMesh.html#a324e5fbc84f49bcf3c64488cfcf61c7a" title="Ra::Core::Geometry\l::TopologicalMesh::getFloat\lPropsHandles" alt="" coords="253,165,446,221"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1Geometry_1_1TopologicalMesh.html#a4e39246a1bcd24efee58de472195b4d4" title="Ra::Core::Geometry\l::TopologicalMesh::getVector2\lPropsHandles" alt="" coords="244,245,455,301"/>
+<area shape="rect" id="node6" href="$classRa_1_1Core_1_1Geometry_1_1TopologicalMesh.html#aedacfa21cfb80c83200daf1998a410a8" title="Ra::Core::Geometry\l::TopologicalMesh::getVector3\lPropsHandles" alt="" coords="244,325,455,381"/>
+<area shape="rect" id="node7" href="$classRa_1_1Core_1_1Geometry_1_1TopologicalMesh.html#a32fc981a9fe179cce958398a92a0ae9b" title="Ra::Core::Geometry\l::TopologicalMesh::getVector4\lPropsHandles" alt="" coords="244,405,455,461"/>
+</map>

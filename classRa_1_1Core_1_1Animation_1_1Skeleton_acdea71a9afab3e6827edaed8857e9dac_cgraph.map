@@ -1,0 +1,8 @@
+<map id="Ra::Core::Animation::Skeleton::projectOnBone" name="Ra::Core::Animation::Skeleton::projectOnBone">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Animation_1_1Skeleton.html#a2422e1bb4c3016f4b07f03696e6a8383" title="Get the i&#45;th bone endpoints. " alt="" coords="243,37,429,79"/>
+<area shape="rect" id="node6" href="$namespaceRa_1_1Core_1_1Geometry.html#aa04e6052d8911b1df1bd881474debb45" title="Ra::Core::Geometry::t" alt="" coords="256,103,416,130"/>
+<area shape="rect" id="node7" href="$namespaceRa_1_1Core_1_1Math.html#a43a856c00d750c5f5c28f362b5df8664" title="Returns value v clamped between bounds min and max. " alt="" coords="255,154,417,181"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1AdjacencyList.html#a068632657bfda6ab9034a879372a45e8" title="Return true if the node is a leaf node. " alt="" coords="477,5,648,47"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1AdjacencyList.html#a23393ccd75883f2eb35196d7c82ee94f" title="Ra::Core::AdjacencyList\l::children" alt="" coords="477,71,648,112"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1AdjacencyList.html#a15e425543855966a22c3b9339aa27b4d" title="Return the number of nodes in the graph. " alt="" coords="696,5,867,47"/>
+</map>

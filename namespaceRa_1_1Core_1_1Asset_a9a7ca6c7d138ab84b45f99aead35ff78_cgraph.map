@@ -1,0 +1,5 @@
+<map id="Ra::Core::Asset::createSkeleton" name="Ra::Core::Asset::createSkeleton">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a06a80ef7e42fd860557b93a1d035d283" title="DATA. " alt="" coords="279,5,483,47"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a456d73d7b367dbf29f03d037bedaeaba" title="Ra::Core::Asset::HandleData\l::getComponentData" alt="" coords="279,71,483,112"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a2ce8dde1d1d3848bcc76693a40e389de" title="Ra::Core::Asset::HandleData\l::getEdgeData" alt="" coords="279,136,483,177"/>
+</map>

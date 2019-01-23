@@ -1,0 +1,6 @@
+<map id="Ra::Engine::DrawPrimitives::Circle" name="Ra::Engine::DrawPrimitives::Circle">
+<area shape="rect" id="node2" href="$namespaceRa_1_1Core_1_1Vector.html#a0464b705193d326a5102691dd58d753d" title="Get two vectors orthogonal to a given vector. " alt="" coords="244,5,469,47"/>
+<area shape="rect" id="node5" href="$namespaceRa_1_1Core_1_1Vector.html#a42d87f3bd0658bac532d72f0ec528827" title="Get the cosine of the angle between two vectors. " alt="" coords="279,71,434,98"/>
+<area shape="rect" id="node3" href="$namespaceRa_1_1Core_1_1Math.html#a90f0fe9079f5bb86c721ea4b61738470" title="Returns the sign of any numeric type as { &#45;1, 0, 1}. " alt="" coords="517,13,668,39"/>
+<area shape="rect" id="node4" href="$namespaceRa_1_1Core_1_1Math.html#ae4e681e0738fe7e5bfd028c6270b597a" title="Ra::Core::Math::signum" alt="" coords="716,13,887,39"/>
+</map>

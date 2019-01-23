@@ -1,0 +1,34 @@
+<map id="/home/travis/build/STORM&#45;IRIT/Radium&#45;Engine/src/IO/CameraLoader/CameraLoader.cpp" name="/home/travis/build/STORM&#45;IRIT/Radium&#45;Engine/src/IO/CameraLoader/CameraLoader.cpp">
+<area shape="rect" id="node2" href="$CameraLoader_8hpp.html" title="IO/CameraLoader/CameraLoader.hpp" alt="" coords="42,408,302,435"/>
+<area shape="rect" id="node14" href="$FileData_8hpp.html" title="Core/Asset/FileData.hpp" alt="" coords="613,109,787,136"/>
+<area shape="rect" id="node49" href="$StringUtils_8hpp.html" title="Core/Utils/StringUtils.hpp" alt="" coords="910,490,1093,517"/>
+<area shape="rect" id="node3" href="$FileLoaderInterface_8hpp.html" title="Core/Asset/FileLoaderInterface.hpp" alt="" coords="642,490,886,517"/>
+<area shape="rect" id="node13" href="$RaIO_8hpp.html" title="IO/RaIO.hpp" alt="" coords="239,572,334,599"/>
+<area shape="rect" id="node6" href="$RaCore_8hpp.html" title="Core/RaCore.hpp" alt="" coords="2281,572,2412,599"/>
+<area shape="rect" id="node7" href="$CoreMacros_8hpp.html" title="Core/CoreMacros.hpp" alt="" coords="3103,647,3263,673"/>
+<area shape="rect" id="node16" href="$FileData_8inl.html" title="Core/Asset/FileData.inl" alt="" coords="1876,184,2041,211"/>
+<area shape="rect" id="node17" href="$AnimationData_8hpp.html" title="Core/Asset/AnimationData.hpp" alt="" coords="2741,259,2961,285"/>
+<area shape="rect" id="node31" href="$Log_8hpp.html" title="Core/Utils/Log.hpp" alt="" coords="3144,490,3283,517"/>
+<area shape="rect" id="node34" href="$CameraData_8hpp.html" title="Core/Asset/CameraData.hpp" alt="" coords="2083,333,2290,360"/>
+<area shape="rect" id="node38" href="$GeometryData_8hpp.html" title="Core/Asset/GeometryData.hpp" alt="" coords="1565,333,1784,360"/>
+<area shape="rect" id="node45" href="$HandleData_8hpp.html" title="Core/Asset/HandleData.hpp" alt="" coords="1859,333,2059,360"/>
+<area shape="rect" id="node47" href="$LightData_8hpp.html" title="Core/Asset/LightData.hpp" alt="" coords="1355,333,1541,360"/>
+<area shape="rect" id="node18" href="$AnimationTime_8hpp.html" title="Core/Animation/Animation\lTime.hpp" alt="" coords="3889,483,4079,524"/>
+<area shape="rect" id="node21" href="$KeyTransform_8hpp.html" title="Core/Animation/KeyTransform.hpp" alt="" coords="3619,333,3858,360"/>
+<area shape="rect" id="node29" href="$AssetData_8hpp.html" title="Core/Asset/AssetData.hpp" alt="" coords="1270,490,1461,517"/>
+<area shape="rect" id="node30" href="$AnimationData_8inl.html" title="Core/Asset/AnimationData.inl" alt="" coords="2745,333,2956,360"/>
+<area shape="rect" id="node22" href="$Interpolation_8hpp.html" title="Core/Animation/Interpolation.hpp" alt="" coords="3619,408,3853,435"/>
+<area shape="rect" id="node27" href="$KeyFrame_8hpp.html" title="Core/Animation/KeyFrame.hpp" alt="" coords="3877,408,4091,435"/>
+<area shape="rect" id="node23" href="$Types_8hpp.html" title="Core/Math/Types.hpp" alt="" coords="3583,490,3737,517"/>
+<area shape="rect" id="node35" href="$VectorArray_8hpp.html" title="Core/Containers/VectorArray.hpp" alt="" coords="2062,408,2293,435"/>
+<area shape="rect" id="node37" href="$CameraData_8inl.html" title="Core/Asset/CameraData.inl" alt="" coords="3145,408,3341,435"/>
+<area shape="rect" id="node36" href="$AlignedStdVector_8hpp.html" title="Core/Containers/AlignedStd\lVector.hpp" alt="" coords="2111,483,2310,524"/>
+<area shape="rect" id="node39" href="$Index_8hpp.html" title="Core/Utils/Index.hpp" alt="" coords="2602,408,2753,435"/>
+<area shape="rect" id="node41" href="$MaterialData_8hpp.html" title="Core/Asset/MaterialData.hpp" alt="" coords="1326,408,1533,435"/>
+<area shape="rect" id="node43" href="$GeometryData_8inl.html" title="Core/Asset/GeometryData.inl" alt="" coords="2317,408,2526,435"/>
+<area shape="rect" id="node40" href="$Index_8inl.html" title="Core/Utils/Index.inl" alt="" coords="2607,490,2747,517"/>
+<area shape="rect" id="node42" href="$MaterialData_8inl.html" title="Core/Asset/MaterialData.inl" alt="" coords="1587,490,1783,517"/>
+<area shape="rect" id="node44" href="$Color_8hpp.html" title="Core/Utils/Color.hpp" alt="" coords="3410,490,3558,517"/>
+<area shape="rect" id="node46" href="$HandleData_8inl.html" title="Core/Asset/HandleData.inl" alt="" coords="2777,408,2967,435"/>
+<area shape="rect" id="node48" href="$LightData_8inl.html" title="Core/Asset/LightData.inl" alt="" coords="1608,408,1784,435"/>
+</map>

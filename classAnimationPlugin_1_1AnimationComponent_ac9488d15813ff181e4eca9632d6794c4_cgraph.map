@@ -1,0 +1,23 @@
+<map id="AnimationPlugin::AnimationComponent::handleAnimationLoading" name="AnimationPlugin::AnimationComponent::handleAnimationLoading">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Animation_1_1Skeleton.html#a5679e1beb544b515c4539ce48a2f2ba3" title="Ra::Core::Animation\l::Skeleton::size" alt="" coords="343,169,493,211"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Animation_1_1Handle.html#af2c003e7a85469470d5591b019e8ab80" title="Ra::Core::Animation\l::Handle::getLabel" alt="" coords="817,5,967,47"/>
+<area shape="rect" id="node13" href="$namespaceRa_1_1Core_1_1Geometry.html#aa04e6052d8911b1df1bd881474debb45" title="Ra::Core::Geometry::t" alt="" coords="338,235,498,262"/>
+<area shape="rect" id="node14" href="$classRa_1_1Core_1_1Animation_1_1KeyFrame.html#a86175e67c429b471659603f8a2514eef" title="Ra::Core::Animation\l::KeyFrame::insertKeyFrame" alt="" coords="319,287,517,328"/>
+<area shape="rect" id="node15" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a06a80ef7e42fd860557b93a1d035d283" title="DATA. " alt="" coords="316,352,520,393"/>
+<area shape="rect" id="node16" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a525f0de4efbe0ba6818f592d80c8f321" title="Ra::Core::Asset::HandleData\l::getComponent" alt="" coords="316,417,520,459"/>
+<area shape="rect" id="node17" href="$namespaceRa_1_1Core_1_1Animation.html#a386a12a440bf79de7a806c397023c443" title="Ra::Core::Animation\l::checkWeightMatrix" alt="" coords="343,483,493,524"/>
+<area shape="rect" id="node20" href="$namespaceRa_1_1Core_1_1Animation.html#a6a32b4881129c88ac07339fd783ebc49" title="In&#45;place normalization of the weights, such that matrix.row( k ).sum() = 1;. " alt="" coords="343,548,493,589"/>
+<area shape="rect" id="node22" href="$classRa_1_1Engine_1_1Component.html#a207c1dc2e97856c22e0767fb77162933" title="Return the entity the component belongs to. " alt="" coords="332,613,504,655"/>
+<area shape="rect" id="node3" href="$namespaceRa_1_1Core_1_1Animation.html#a93d6305ed74ab59961969dce601714c2" title="Ra::Core::Animation\l::operator\&lt;\&lt;" alt="" coords="589,169,738,211"/>
+<area shape="rect" id="node6" href="$classRa_1_1Core_1_1AdjacencyList.html#a4e87e76f65f897cbe99d805b6cb35055" title="Return true if a node is a root node. " alt="" coords="807,71,977,112"/>
+<area shape="rect" id="node8" href="$classRa_1_1Core_1_1AdjacencyList.html#a37f39f4b1560b523a42ec3fb7187da2e" title="Return true if the node is a joint node. ( |child| == 1 ) " alt="" coords="807,136,977,177"/>
+<area shape="rect" id="node9" href="$classRa_1_1Core_1_1AdjacencyList.html#a4ed5a37c628d3a1375f14f40bcd219e6" title="Return true if the node is a branch node. ( |child| &gt; 1 ) " alt="" coords="807,201,977,243"/>
+<area shape="rect" id="node10" href="$classRa_1_1Core_1_1AdjacencyList.html#a068632657bfda6ab9034a879372a45e8" title="Return true if the node is a leaf node. " alt="" coords="807,267,977,308"/>
+<area shape="rect" id="node11" href="$classRa_1_1Core_1_1AdjacencyList.html#a9c0e48ccbcfec3e3c35bebf6a45c7b12" title="Ra::Core::AdjacencyList\l::parents" alt="" coords="807,332,977,373"/>
+<area shape="rect" id="node12" href="$classRa_1_1Core_1_1AdjacencyList.html#a23393ccd75883f2eb35196d7c82ee94f" title="Ra::Core::AdjacencyList\l::children" alt="" coords="807,397,977,439"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1Animation_1_1Handle.html#aba876355658e5f8953033d3bb8f18533" title="Ra::Core::Animation\l::Handle::size" alt="" coords="1036,5,1185,47"/>
+<area shape="rect" id="node7" href="$classRa_1_1Core_1_1AdjacencyList.html#a15e425543855966a22c3b9339aa27b4d" title="Return the number of nodes in the graph. " alt="" coords="1025,169,1196,211"/>
+<area shape="rect" id="node18" href="$namespaceRa_1_1Core_1_1MatrixUtils.html#a3d8cdc418629d9b8ca96efe759e3bc17" title="Call std::isnormal on matrix entry. " alt="" coords="580,417,747,459"/>
+<area shape="rect" id="node19" href="$namespaceRa_1_1Core_1_1Animation.html#a5f77b87a09e5e7bd707190d70e4f4b64" title="Ra::Core::Animation\l::checkNoWeightVertex" alt="" coords="579,483,747,524"/>
+<area shape="rect" id="node21" href="$namespaceRa_1_1Core_1_1Math.html#af36b0dc40414af4cc329f037d428dada" title="Returns true if |a &#45;b| &lt; eps. " alt="" coords="568,548,759,589"/>
+</map>

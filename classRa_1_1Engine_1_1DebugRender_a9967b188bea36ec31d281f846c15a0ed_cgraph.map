@@ -1,0 +1,3 @@
+<map id="Ra::Engine::DebugRender::addTriangle" name="Ra::Engine::DebugRender::addTriangle">
+<area shape="rect" id="node2" href="$namespaceRa_1_1Engine_1_1DrawPrimitives.html#a4324782568665add0be80a7204d04603" title="Displays given triangle ABC, either in wireframe (fill = false) or filled with the color(fill = true)..." alt="" coords="236,5,427,47"/>
+</map>

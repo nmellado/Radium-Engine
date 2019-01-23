@@ -1,0 +1,5 @@
+<map id="Ra::IO::AssimpGeometryDataLoader::fetchTextureCoordinates" name="Ra::IO::AssimpGeometryDataLoader::fetchTextureCoordinates">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Asset_1_1GeometryData.html#a762ed62a1450a0cbeed4465cc62f9843" title="Return the list of vertex texture coordinates. " alt="" coords="283,5,475,47"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Asset_1_1GeometryData.html#a853558748a15cc6cb17180202e80591c" title="Return the number of vertices. " alt="" coords="283,71,475,112"/>
+<area shape="rect" id="node4" href="$namespaceRa_1_1IO.html#aef6c50424873964fcea0008be55d4a34" title="Ra::IO::assimpToCore" alt="" coords="301,137,457,163"/>
+</map>

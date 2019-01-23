@@ -1,0 +1,17 @@
+<map id="AnimationPlugin::AnimationSystem::handleAssetLoading" name="AnimationPlugin::AnimationSystem::handleAssetLoading">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Asset_1_1FileData.html#a46beb82e240cf24be6f3c2127e2b4c7a" title="DATA. " alt="" coords="299,5,478,47"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Asset_1_1FileData.html#a36b5050f3bcc3f39c14e746edb8bb697" title="Ra::Core::Asset::FileData\l::getHandleData" alt="" coords="299,71,478,112"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Asset_1_1FileData.html#a2c5bfe2652ced721270e7b5c34ca1fd8" title="Ra::Core::Asset::FileData\l::getAnimationData" alt="" coords="299,136,478,177"/>
+<area shape="rect" id="node5" href="$classAnimationPlugin_1_1AnimationComponent.html#a6445d752cb987da1c20d1b932c4accc9" title="Create the skeleton from the given data. " alt="" coords="261,201,516,243"/>
+<area shape="rect" id="node13" href="$classRa_1_1Engine_1_1System.html#ad7b2a746c42f08a729b4df9b991293a8" title="Registers a component belonging to an entity, making it active within the system. ..." alt="" coords="311,359,466,400"/>
+<area shape="rect" id="node6" href="$classRa_1_1Core_1_1Asset_1_1AssetData.html#a3f4a6e18b60f2de4a23c8898a7341d21" title="Acces to the name of the asset. " alt="" coords="579,77,774,119"/>
+<area shape="rect" id="node7" href="$classRa_1_1Core_1_1Animation_1_1Handle.html#ae8dab79a9d571d2a876ec9aaeb36959c" title="Set the Handle&#39;s name. " alt="" coords="602,143,751,184"/>
+<area shape="rect" id="node8" href="$namespaceRa_1_1Core_1_1Asset.html#a9a7ca6c7d138ab84b45f99aead35ff78" title="Create a skeleton from a Handle Data extracted from a file Outputs the skeleton and a map from the co..." alt="" coords="564,209,789,235"/>
+<area shape="rect" id="node12" href="$classRa_1_1Core_1_1Animation_1_1Skeleton.html#acb6381c3f288f580800589eb718c1759" title="Ra::Core::Animation\l::Skeleton::getPose" alt="" coords="602,260,751,301"/>
+<area shape="rect" id="node9" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a06a80ef7e42fd860557b93a1d035d283" title="DATA. " alt="" coords="837,136,1041,177"/>
+<area shape="rect" id="node10" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a456d73d7b367dbf29f03d037bedaeaba" title="Ra::Core::Asset::HandleData\l::getComponentData" alt="" coords="837,201,1041,243"/>
+<area shape="rect" id="node11" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a2ce8dde1d1d3848bcc76693a40e389de" title="Ra::Core::Asset::HandleData\l::getEdgeData" alt="" coords="837,267,1041,308"/>
+<area shape="rect" id="node14" href="$classRa_1_1Engine_1_1Component.html#a207c1dc2e97856c22e0767fb77162933" title="Return the entity the component belongs to. " alt="" coords="591,325,763,367"/>
+<area shape="rect" id="node15" href="$classRa_1_1Engine_1_1Component.html#aa3e5cb90432a9a49e4362b673652ff76" title="Return the component&#39;s name. " alt="" coords="591,391,763,432"/>
+<area shape="rect" id="node16" href="$classRa_1_1Engine_1_1Component.html#aa9416af3319ba92aa7b532952c75e477" title="Set the system to which the component belongs. " alt="" coords="591,456,763,497"/>
+</map>

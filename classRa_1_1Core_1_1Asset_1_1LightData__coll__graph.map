@@ -1,0 +1,8 @@
+<map id="Ra::Core::Asset::LightData" name="Ra::Core::Asset::LightData">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Asset_1_1AssetData.html" title="General interface of an asset data. " alt="" coords="5,910,200,1031"/>
+<area shape="rect" id="node3" title="STL class. " alt="" coords="59,352,146,429"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="34,5,171,97"/>
+<area shape="rect" id="node19" href="$structRa_1_1Core_1_1Asset_1_1LightData_1_1LightAttenuation.html" title="Define the parameters of the attenuation function. " alt="" coords="701,925,891,1017"/>
+<area shape="rect" id="node11" href="$classRa_1_1Core_1_1Utils_1_1ColorBase.html" title="{Ra::Core::Utils::ColorBase\l\&lt; Scalar \&gt;\n||+ ColorBase()\l+ ColorBase()\l+ ColorBase()\l+ ColorBase()\l+ operator VectorType()\l+ rgb()\l+ rgb()\l+ alpha()\l+ alpha()\l+ toRGBA32()\l+ toARGB32()\l+ fromRGB()\l+ Alpha()\l+ Black()\l+ Red()\l+ Green()\l+ Blue()\l+ Yellow()\l+ Magenta()\l+ Cyan()\l+ White()\l+ Grey()\l+ Skin()\l+ fromChars()\l+ fromRGBA32()\l+ fromARGB32()\l+ fromHSV()\l+ scatter()\l}" alt="" coords="1434,727,1619,1215"/>
+<area shape="rect" id="node13" href="$classRa_1_1Core_1_1Utils_1_1ColorBase.html" title="{Ra::Core::Utils::ColorBase\l\&lt; _Scalar \&gt;\n||+ ColorBase()\l+ ColorBase()\l+ ColorBase()\l+ ColorBase()\l+ operator VectorType()\l+ rgb()\l+ rgb()\l+ alpha()\l+ alpha()\l+ toRGBA32()\l+ toARGB32()\l+ fromRGB()\l+ Alpha()\l+ Black()\l+ Red()\l+ Green()\l+ Blue()\l+ Yellow()\l+ Magenta()\l+ Cyan()\l+ White()\l+ Grey()\l+ Skin()\l+ fromChars()\l+ fromRGBA32()\l+ fromARGB32()\l+ fromHSV()\l+ scatter()\l}" alt="" coords="1570,147,1755,635"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="SkinningPlugin::SkinningComponent" name="SkinningPlugin::SkinningComponent">
+<area shape="rect" id="node2" href="$classRa_1_1Engine_1_1Component.html" title="A component is an element that can be updated by a system. " alt="" coords="477,1328,691,1625"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="159,351,286,428"/>
+<area shape="rect" id="node7" href="$classRa_1_1Engine_1_1System.html" title="Systems are responsible of updating a specific subset of the components of each entity. " alt="" coords="367,1012,577,1192"/>
+<area shape="rect" id="node10" href="$classRa_1_1Engine_1_1Entity.html" title="An entity is an scene element. It ties together components with a transform. " alt="" coords="603,939,789,1265"/>
+<area shape="rect" id="node11" href="$classRa_1_1Core_1_1Utils_1_1IndexedObject.html" title="{Ra::Core::Utils::Indexed\lObject\n||+ IndexedObject()\l+ IndexedObject()\l+ ~IndexedObject()\l+ setIndex()\l+ getIndex()\l}" alt="" coords="611,725,781,876"/>
+<area shape="rect" id="node12" href="$classRa_1_1Core_1_1Utils_1_1Index.html" title="{Ra::Core::Utils::Index\n||+ Index()\l+ Index()\l+ isValid()\l+ isInvalid()\l+ setInvalid()\l+ getValue()\l+ setValue()\l+ operator int()\l+ operator=()\l+ operator++()\l+ operator&#45;&#45;()\l+ operator+()\l+ operator+()\l+ operator&#45;()\l+ operator&#45;()\l+ operator==()\l+ operator==()\l+ operator!=()\l+ operator!=()\l+ operator\&lt;()\l+ operator\&lt;()\l+ operator\&lt;=()\l+ operator\&lt;=()\l+ operator\&gt;()\l+ operator\&gt;()\l+ operator\&gt;=()\l+ operator\&gt;=()\l+ Invalid()\l+ Max()\l}" alt="" coords="644,145,799,633"/>
+<area shape="rect" id="node14" title="STL class. " alt="" coords="823,1063,910,1141"/>
+<area shape="rect" id="node15" title="STL class. " alt="" coords="806,755,943,847"/>
+</map>

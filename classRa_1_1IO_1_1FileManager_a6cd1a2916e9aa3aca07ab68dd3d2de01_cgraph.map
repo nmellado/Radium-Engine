@@ -1,0 +1,7 @@
+<map id="Ra::IO::FileManager::load" name="Ra::IO::FileManager::load">
+<area shape="rect" id="node2" href="$classRa_1_1IO_1_1FileManager.html#a9c1a5bca6d142f7f4a0812c1995d5f4b" title="LOG. " alt="" coords="404,102,547,143"/>
+<area shape="rect" id="node3" href="$classRa_1_1IO_1_1FileManager.html#a457d7c3e87c8ce2954afc4254ce271c4" title="INTERFACE. " alt="" coords="205,36,347,78"/>
+<area shape="rect" id="node4" href="$classRa_1_1IO_1_1FileManager.html#a8bf10853e266493eb606a37f85fa0277" title="Ra::IO::FileManager\l::addLogWarningEntry" alt="" coords="196,102,356,143"/>
+<area shape="rect" id="node5" href="$classRa_1_1IO_1_1FileManager.html#a2b788483f09e07553e4cb4ca768063b4" title="Ra::IO::FileManager\l::addLogErrorEntry" alt="" coords="205,167,347,208"/>
+<area shape="rect" id="node6" href="$classRa_1_1IO_1_1FileManager.html#a6c4d9028fd8aba0e334170f32d85a12f" title="Ra::IO::FileManager\l::importData" alt="" coords="205,232,347,274"/>
+</map>

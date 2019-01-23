@@ -1,0 +1,9 @@
+<map id="Ra::Core::Geometry::TopologicalMesh::TopologicalMesh" name="Ra::Core::Geometry::TopologicalMesh::TopologicalMesh">
+<area shape="rect" id="node2" href="$namespaceRa_1_1Core_1_1Geometry.html#a601a2b592cb0aa42abfce8e25df9fbdd" title="Ra::Core::Geometry\l::addAttribPairToTopo" alt="" coords="306,37,461,79"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#a6ef9dbd18c0501f2ffd1316be6be56ce" title="Access the vertices positions. " alt="" coords="298,103,469,144"/>
+<area shape="rect" id="node6" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#ad7d3f6272b902171740e50232ba56114" title="Access the vertices normals. " alt="" coords="297,168,469,209"/>
+<area shape="rect" id="node7" href="$namespaceRa_1_1Core_1_1Geometry.html#aa1d699281b3cdbd99edf8292e821e85b" title="Ra::Core::Geometry\l::copyAttribToTopo" alt="" coords="309,233,457,275"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#a316e86eab4e624183f1bfe5c25f8592c" title="Return the Handle to the attribute with the given name if it exists, an invalid handle otherwise..." alt="" coords="517,5,739,47"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Utils_1_1AttribBase.html#a199a249dfb217c274268c016504b46cc" title="Ra::Core::Utils::AttribBase\l::getName" alt="" coords="535,71,721,112"/>
+<area shape="rect" id="node8" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#a209037ce5a11ec8539a9ada7ba763e8c" title="Get attribute by handle. " alt="" coords="540,233,716,275"/>
+</map>

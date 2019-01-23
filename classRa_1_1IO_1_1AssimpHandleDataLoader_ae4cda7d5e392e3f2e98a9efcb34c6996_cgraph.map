@@ -1,0 +1,25 @@
+<map id="Ra::IO::AssimpHandleDataLoader::loadData" name="Ra::IO::AssimpHandleDataLoader::loadData">
+<area shape="rect" id="node2" href="$classRa_1_1IO_1_1AssimpHandleDataLoader.html#adb8537824f65bbf5681e3c412865aafa" title="QUERY. " alt="" coords="244,97,435,139"/>
+<area shape="rect" id="node4" href="$classRa_1_1IO_1_1AssimpHandleDataLoader.html#afbfe6c45b04ec821727c4f3919824bd3" title="LOAD. " alt="" coords="244,287,435,328"/>
+<area shape="rect" id="node3" href="$classRa_1_1IO_1_1AssimpHandleDataLoader.html#a490e0e5bd008f42af1cf31af678bec27" title="Ra::IO::AssimpHandleData\lLoader::sceneHandleSize" alt="" coords="513,5,704,47"/>
+<area shape="rect" id="node5" href="$classRa_1_1IO_1_1AssimpHandleDataLoader.html#a41118f7b4793a4de55fd04e502806691" title="NAME. " alt="" coords="513,253,704,295"/>
+<area shape="rect" id="node8" href="$classRa_1_1IO_1_1AssimpHandleDataLoader.html#aa7193439168ce3dfa7368c6dadf0b6a4" title="TYPE. " alt="" coords="513,188,704,229"/>
+<area shape="rect" id="node10" href="$classRa_1_1IO_1_1AssimpHandleDataLoader.html#abe663e26206f06c9e6c56f961e7020be" title="Ra::IO::AssimpHandleData\lLoader::loadHandleComponentData" alt="" coords="483,384,735,425"/>
+<area shape="rect" id="node14" href="$classRa_1_1IO_1_1AssimpHandleDataLoader.html#a12c4099b4a3c03af75b0d61f861906a9" title="Ra::IO::AssimpHandleData\lLoader::loadHandleTopologyData" alt="" coords="493,547,725,588"/>
+<area shape="rect" id="node19" href="$classRa_1_1IO_1_1AssimpHandleDataLoader.html#ad8c55720f9aa8b8f5f466e19adc20478" title="VERTEX SIZE. " alt="" coords="513,645,704,687"/>
+<area shape="rect" id="node21" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a456d73d7b367dbf29f03d037bedaeaba" title="Ra::Core::Asset::HandleData\l::getComponentData" alt="" coords="507,711,711,752"/>
+<area shape="rect" id="node22" href="$namespaceRa_1_1Core_1_1Geometry.html#aa04e6052d8911b1df1bd881474debb45" title="Ra::Core::Geometry::t" alt="" coords="529,71,689,98"/>
+<area shape="rect" id="node23" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a2418d9eca693c1ce84e66837faef6091" title="DEBUG. " alt="" coords="507,123,711,164"/>
+<area shape="rect" id="node24" href="$classRa_1_1IO_1_1AssimpHandleDataLoader.html#a6a684817c70bd8ac29f80a7840c5238d" title="Ra::IO::AssimpHandleData\lLoader::loadHandleFrame" alt="" coords="513,319,704,360"/>
+<area shape="rect" id="node6" href="$namespaceRa_1_1IO.html#aef6c50424873964fcea0008be55d4a34" title="Ra::IO::assimpToCore" alt="" coords="807,267,963,294"/>
+<area shape="rect" id="node7" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#afd1b588bb09b7e6ff3ed39d702d4b042" title="NAME. " alt="" coords="783,201,987,243"/>
+<area shape="rect" id="node9" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a9b6aadf86a2a5328c83fc9d17f09893c" title="Ra::Core::Asset::HandleData\l::setType" alt="" coords="783,136,987,177"/>
+<area shape="rect" id="node11" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#acbae173d72a5e07eaec8e930c9fffecf" title="Ra::Core::Asset::HandleData\l::needEndNodes" alt="" coords="783,449,987,491"/>
+<area shape="rect" id="node12" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#aec0ba90b5be78188b7e440aed18fe086" title="Ra::Core::Asset::HandleData\l::setComponents" alt="" coords="783,319,987,360"/>
+<area shape="rect" id="node13" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a1189e767e22ef4bb93527a724630cc56" title="NAME TABLE. " alt="" coords="783,384,987,425"/>
+<area shape="rect" id="node15" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a06a80ef7e42fd860557b93a1d035d283" title="DATA. " alt="" coords="783,645,987,687"/>
+<area shape="rect" id="node16" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a525f0de4efbe0ba6818f592d80c8f321" title="Ra::Core::Asset::HandleData\l::getComponent" alt="" coords="783,711,987,752"/>
+<area shape="rect" id="node17" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a619029e93f6bdd0c0fdfec40e8662448" title="Ra::Core::Asset::HandleData\l::getIndexOf" alt="" coords="783,580,987,621"/>
+<area shape="rect" id="node18" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a6ebdd020a0ba44289627779b6cbd71cb" title="Ra::Core::Asset::HandleData\l::setEdges" alt="" coords="783,515,987,556"/>
+<area shape="rect" id="node20" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#afbeb8b2911a5cdf62d976d6ce833954d" title="Ra::Core::Asset::HandleData\l::setVertexSize" alt="" coords="783,776,987,817"/>
+</map>

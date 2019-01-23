@@ -1,0 +1,6 @@
+<map id="Ra::Core::Asset::FileLoaderInterface::~FileLoaderInterface" name="Ra::Core::Asset::FileLoaderInterface::~FileLoaderInterface">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Asset_1_1FileLoaderInterface.html#a87155782e0258eeba232f60cc8d905a9" title="Ra::Core::Asset::FileLoader\lInterface::getFileExtensions" alt="" coords="278,5,474,47"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Asset_1_1FileLoaderInterface.html#a0bd4215d6e780ef5a733dba508a7dafe" title="Ra::Core::Asset::FileLoader\lInterface::handleFileExtension" alt="" coords="271,71,481,112"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Asset_1_1FileLoaderInterface.html#a00cd047e34ff18ba46d469830ed33421" title="Try to load file, returns nullptr in case of failure. " alt="" coords="280,136,472,177"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1Asset_1_1FileLoaderInterface.html#a8f1bc65a927da037686cc3ff889fb149" title="Unique name of the loader. " alt="" coords="280,201,472,243"/>
+</map>

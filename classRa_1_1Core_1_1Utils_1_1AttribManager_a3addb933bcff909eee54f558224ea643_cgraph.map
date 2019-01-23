@@ -1,0 +1,7 @@
+<map id="Ra::Core::Utils::AttribManager::copyAttributes" name="Ra::Core::Utils::AttribManager::copyAttributes">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Utils_1_1AttribManager.html#a15852253cab37e8aa8af5c76ec056f3d" title="Return true if h correspond to an existing attribute in *this. " alt="" coords="264,37,475,79"/>
+<area shape="rect" id="node6" href="$classRa_1_1Core_1_1Utils_1_1AttribManager.html#a0a49a4d134669b24642856717a1e5c5b" title="Get attribute by handle. " alt="" coords="264,103,475,144"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Utils_1_1Index.html#a771f93efd49538950e3cb9e57e46fbaf" title="Ra::Core::Utils::Index\l::Invalid" alt="" coords="545,5,700,47"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1Utils_1_1AttribHandle.html#ab1b136a123fc9f7a52ac6886526d2013" title="Ra::Core::Utils::AttribHandle\l::attribName" alt="" coords="523,71,723,112"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Utils_1_1Index.html#ab3ba134498a9c2f1f3f9ccadd984a8e8" title="CONSTRUCTOR Default constructor that allow implicit conversion from integer to Index. " alt="" coords="771,5,925,47"/>
+</map>

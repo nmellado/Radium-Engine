@@ -1,0 +1,7 @@
+<map id="Ra::Core::Geometry::PolyLine::distance" name="Ra::Core::Geometry::PolyLine::distance">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Geometry_1_1PolyLine.html#a40a7f81397d22d6a47a19703f032e779" title="Return the squared distance between the line and a given point p. " alt="" coords="201,27,400,69"/>
+<area shape="rect" id="node3" href="$namespaceRa_1_1Core_1_1Geometry.html#aeea8bbe4e358200b7cedea4f628ae3b4" title="Return the squared distance from point Q to the segment AB defined by point A and vector AB = (B &#45; A)..." alt="" coords="448,27,599,69"/>
+<area shape="rect" id="node4" href="$namespaceRa_1_1Core_1_1Geometry.html#aa04e6052d8911b1df1bd881474debb45" title="Ra::Core::Geometry::t" alt="" coords="647,5,807,32"/>
+<area shape="rect" id="node5" href="$namespaceRa_1_1Core_1_1Geometry.html#a749ee9e81862ef200b0b7540cc1f16bc" title="Project point Q on segment AB defined by point A and vector AB = (B &#45;A). " alt="" coords="651,57,802,98"/>
+<area shape="rect" id="node6" href="$namespaceOpenMesh.html#a575b338f0fc9ecb5393d23e977e6ac38" title="OpenMesh::dot" alt="" coords="855,64,973,91"/>
+</map>

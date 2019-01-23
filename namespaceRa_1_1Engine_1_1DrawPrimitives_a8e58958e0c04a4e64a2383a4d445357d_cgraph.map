@@ -1,0 +1,11 @@
+<map id="Ra::Engine::DrawPrimitives::Capsule" name="Ra::Engine::DrawPrimitives::Capsule">
+<area shape="rect" id="node2" href="$namespaceOpenMesh.html#a8205f789ce08919bc11c58383574596c" title="OpenMesh::norm" alt="" coords="943,5,1075,32"/>
+<area shape="rect" id="node3" href="$namespaceRa_1_1Core_1_1Geometry.html#afedff70dba2bde63195ce841ec8d7d0f" title="Create a capsule with given cylinder length and radius. " alt="" coords="244,90,392,131"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#a6ef9dbd18c0501f2ffd1316be6be56ce" title="Access the vertices positions. " alt="" coords="723,39,894,81"/>
+<area shape="rect" id="node8" href="$namespaceRa_1_1Core_1_1Geometry.html#aa04e6052d8911b1df1bd881474debb45" title="Ra::Core::Geometry::t" alt="" coords="729,261,889,288"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#ad7d3f6272b902171740e50232ba56114" title="Access the vertices normals. " alt="" coords="723,181,895,222"/>
+<area shape="rect" id="node6" href="$namespaceRa_1_1Core_1_1Vector.html#a42d87f3bd0658bac532d72f0ec528827" title="Get the cosine of the angle between two vectors. " alt="" coords="480,97,635,124"/>
+<area shape="rect" id="node7" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#a0b294c697e094dcc62b3adb3c0ac16af" title="Check that the mesh is well built, asserting when it is not. " alt="" coords="440,149,675,190"/>
+<area shape="rect" id="node9" href="$namespaceRa_1_1Core_1_1Geometry.html#a178f2b7309fe2ea5bc31a3abcb25368e" title="Ra::Core::Geometry\l::triangleArea" alt="" coords="735,109,883,150"/>
+<area shape="rect" id="node10" href="$namespaceOpenMesh.html#a71e7f1dd3eac016d2b8245ac408a291c" title="OpenMesh::cross" alt="" coords="943,116,1075,143"/>
+</map>

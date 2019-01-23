@@ -1,0 +1,5 @@
+<map id="Ra::Engine::DrawPrimitives::Primitive" name="Ra::Engine::DrawPrimitives::Primitive">
+<area shape="rect" id="node2" href="$namespaceRa_1_1Engine_1_1ShaderConfigurationFactory.html#a0bc60f21dbabd745961037f3d2f019c8" title="Get a configuration from the factory. " alt="" coords="244,5,472,47"/>
+<area shape="rect" id="node4" href="$classRa_1_1Engine_1_1RenderTechnique.html#a9bddcd20723ee582fd81c363b9148cf9" title="Ra::Engine::RenderTechnique\l::setMaterial" alt="" coords="256,71,460,112"/>
+<area shape="rect" id="node3" href="$classRa_1_1Engine_1_1ShaderConfiguration.html#a7e20a600c78e8627f0238b342f4b42f2" title="Ra::Engine::ShaderConfiguration\l::getDefaultShaderConfig" alt="" coords="520,5,748,47"/>
+</map>

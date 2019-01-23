@@ -1,0 +1,7 @@
+<map id="Ra::Gui::Gizmo::~Gizmo" name="Ra::Gui::Gizmo::~Gizmo">
+<area shape="rect" id="node2" href="$classRa_1_1Engine_1_1Component.html#a61d99a79b8f17110b90297ba655caa93" title="Remove the render object from the component. " alt="" coords="229,39,401,80"/>
+<area shape="rect" id="node3" href="$classRa_1_1Engine_1_1Component.html#a10b0bc182b76165744ebea603ae32dfe" title="Shortcut to access the render object manager. " alt="" coords="473,5,645,47"/>
+<area shape="rect" id="node4" href="$classRa_1_1Engine_1_1RenderObjectManager.html#a799b29b7dae9b6b86aaf96d4e5567d0b" title="Ra::Engine::RenderObject\lManager::removeRenderObject" alt="" coords="449,71,669,112"/>
+<area shape="rect" id="node5" href="$classRa_1_1Engine_1_1RenderObjectManager.html#a088feae4339349a81b7b6635b38aead1" title="Returns true if the index points to a valid render object. " alt="" coords="717,71,900,112"/>
+<area shape="rect" id="node6" href="$classRa_1_1Core_1_1Utils_1_1Index.html#ac7a1b710e6b95834a562c27e2f6c0f4b" title="DESTRUCTOR: Must not be defined, we need it trivial to be constexpr. " alt="" coords="948,71,1103,112"/>
+</map>

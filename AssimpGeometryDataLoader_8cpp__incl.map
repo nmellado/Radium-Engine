@@ -1,0 +1,22 @@
+<map id="/home/travis/build/STORM&#45;IRIT/Radium&#45;Engine/src/IO/AssimpLoader/AssimpGeometryDataLoader.cpp" name="/home/travis/build/STORM&#45;IRIT/Radium&#45;Engine/src/IO/AssimpLoader/AssimpGeometryDataLoader.cpp">
+<area shape="rect" id="node2" href="$AssimpGeometryDataLoader_8hpp.html" title="IO/AssimpLoader/AssimpGeometry\lDataLoader.hpp" alt="" coords="5,213,251,255"/>
+<area shape="rect" id="node21" href="$GeometryData_8hpp.html" title="Core/Asset/GeometryData.hpp" alt="" coords="1381,131,1600,158"/>
+<area shape="rect" id="node35" href="$Log_8hpp.html" title="Core/Utils/Log.hpp" alt="" coords="2357,310,2496,337"/>
+<area shape="rect" id="node40" href="$BlinnPhongMaterialData_8hpp.html" title="Core/Asset/BlinnPhongMaterial\lData.hpp" alt="" coords="2205,124,2424,165"/>
+<area shape="rect" id="node42" href="$AssimpWrapper_8hpp.html" title="IO/AssimpLoader/AssimpWrapper.hpp" alt="" coords="2553,221,2813,247"/>
+<area shape="rect" id="node3" href="$DataLoader_8hpp.html" title="Core/Asset/DataLoader.hpp" alt="" coords="274,310,473,337"/>
+<area shape="rect" id="node6" href="$Types_8hpp.html" title="Core/Math/Types.hpp" alt="" coords="971,310,1125,337"/>
+<area shape="rect" id="node17" href="$RaIO_8hpp.html" title="IO/RaIO.hpp" alt="" coords="51,392,146,419"/>
+<area shape="rect" id="node7" href="$RaCore_8hpp.html" title="Core/RaCore.hpp" alt="" coords="1256,392,1387,419"/>
+<area shape="rect" id="node8" href="$CoreMacros_8hpp.html" title="Core/CoreMacros.hpp" alt="" coords="1549,467,1709,493"/>
+<area shape="rect" id="node23" href="$VectorArray_8hpp.html" title="Core/Containers/VectorArray.hpp" alt="" coords="665,221,895,247"/>
+<area shape="rect" id="node26" href="$Index_8hpp.html" title="Core/Utils/Index.hpp" alt="" coords="1267,221,1418,247"/>
+<area shape="rect" id="node29" href="$AssetData_8hpp.html" title="Core/Asset/AssetData.hpp" alt="" coords="1395,310,1586,337"/>
+<area shape="rect" id="node30" href="$MaterialData_8hpp.html" title="Core/Asset/MaterialData.hpp" alt="" coords="1677,221,1883,247"/>
+<area shape="rect" id="node32" href="$GeometryData_8inl.html" title="Core/Asset/GeometryData.inl" alt="" coords="1921,221,2130,247"/>
+<area shape="rect" id="node24" href="$AlignedStdVector_8hpp.html" title="Core/Containers/AlignedStd\lVector.hpp" alt="" coords="647,303,846,344"/>
+<area shape="rect" id="node28" href="$Index_8inl.html" title="Core/Utils/Index.inl" alt="" coords="1150,310,1290,337"/>
+<area shape="rect" id="node31" href="$MaterialData_8inl.html" title="Core/Asset/MaterialData.inl" alt="" coords="1713,310,1909,337"/>
+<area shape="rect" id="node33" href="$Color_8hpp.html" title="Core/Utils/Color.hpp" alt="" coords="2185,310,2333,337"/>
+<area shape="rect" id="node41" href="$BlinnPhongMaterialData_8inl.html" title="Core/Asset/BlinnPhongMaterial\lData.inl" alt="" coords="2205,213,2424,255"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Ra::GuiBase::BaseApplication::recordFrame" name="Ra::GuiBase::BaseApplication::recordFrame">
+<area shape="rect" id="node2" href="$classRa_1_1Gui_1_1Viewer.html#ab3854bf1c656d1f6bf7e12e61251e9dc" title="Write the current frame as an image. Supports either BMP or PNG file names. " alt="" coords="263,141,457,167"/>
+<area shape="rect" id="node3" href="$classRa_1_1Engine_1_1Renderer.html#a584cc744ee0f15884f5f853209c055cd" title="Ra::Engine::Renderer\l::grabFrame" alt="" coords="519,104,673,145"/>
+<area shape="rect" id="node8" href="$namespaceRa_1_1Core_1_1Utils.html#aad2a7bedc49e227d0503794d76acbfea" title="Ra::Core::Utils::getFileExt" alt="" coords="505,170,687,197"/>
+<area shape="rect" id="node4" href="$classRa_1_1Engine_1_1Renderer.html#a8a68ecdea83da2148ef303176bcffac8" title="Get the currently displayed texture. " alt="" coords="735,5,889,47"/>
+<area shape="rect" id="node5" href="$classRa_1_1Engine_1_1Texture.html#a9ba7fb88d2b2b023ad5e68f2d4f3f1bb" title="Bind the texture to enable its use in a shader. " alt="" coords="741,71,883,112"/>
+<area shape="rect" id="node6" href="$classRa_1_1Engine_1_1Texture.html#a5fb64b92e7a9025f6ad315f84eba2dca" title="Ra::Engine::Texture\l::width" alt="" coords="741,136,883,177"/>
+<area shape="rect" id="node7" href="$classRa_1_1Engine_1_1Texture.html#a42c27099c6aa960f13485a4477517296" title="Ra::Engine::Texture\l::height" alt="" coords="741,201,883,243"/>
+</map>

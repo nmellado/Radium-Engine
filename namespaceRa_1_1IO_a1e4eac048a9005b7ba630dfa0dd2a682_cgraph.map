@@ -1,0 +1,11 @@
+<map id="Ra::IO::~OBJFileManager" name="Ra::IO::~OBJFileManager">
+<area shape="rect" id="node2" href="$namespaceRa_1_1IO.html#a966c5896ae38f8116c9a0217fbfca14d" title="INTERFACE. " alt="" coords="242,5,389,32"/>
+<area shape="rect" id="node3" href="$namespaceRa_1_1IO.html#a500f44220d3d052530dc956f6de3fea3" title="Ra::IO::importData" alt="" coords="245,56,385,83"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#a824b54329930c6a95050c3f6d624d0e7" title="Erases all data, making the mesh empty. " alt="" coords="240,107,391,149"/>
+<area shape="rect" id="node6" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#a6ef9dbd18c0501f2ffd1316be6be56ce" title="Access the vertices positions. " alt="" coords="230,173,401,214"/>
+<area shape="rect" id="node7" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#ad7d3f6272b902171740e50232ba56114" title="Access the vertices normals. " alt="" coords="229,238,401,279"/>
+<area shape="rect" id="node8" href="$classRa_1_1IO_1_1FileManager.html#a2b788483f09e07553e4cb4ca768063b4" title="Ra::IO::FileManager\l::addLogErrorEntry" alt="" coords="244,303,387,345"/>
+<area shape="rect" id="node10" href="$namespaceRa_1_1IO.html#a12ada915ca1c3b7b7dfedb7172d5cfcc" title="Ra::IO::exportData" alt="" coords="246,369,385,396"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1Utils_1_1AttribManager.html#ae99bb77d3d29e9d99b4bcc257919ecda" title="clear all attribs, invalidate handles. " alt="" coords="449,107,660,149"/>
+<area shape="rect" id="node9" href="$classRa_1_1IO_1_1FileManager.html#a9c1a5bca6d142f7f4a0812c1995d5f4b" title="LOG. " alt="" coords="483,303,626,345"/>
+</map>

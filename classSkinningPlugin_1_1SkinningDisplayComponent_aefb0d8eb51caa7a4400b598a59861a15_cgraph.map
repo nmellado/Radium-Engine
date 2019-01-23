@@ -1,0 +1,12 @@
+<map id="SkinningPlugin::SkinningDisplayComponent::display" name="SkinningPlugin::SkinningDisplayComponent::display">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#a6ef9dbd18c0501f2ffd1316be6be56ce" title="Access the vertices positions. " alt="" coords="277,5,447,47"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Utils_1_1ColorBase.html#ac863a693d5be518521734c6228e09e00" title="Ra::Core::Utils::ColorBase\l\&lt; Scalar \&gt;::fromHSV" alt="" coords="269,71,455,112"/>
+<area shape="rect" id="node4" href="$namespaceRa_1_1Core_1_1Geometry.html#af8455d2759023a6255c65ef19fccc059" title="GLOBAL MATRIX ///. " alt="" coords="288,136,436,177"/>
+<area shape="rect" id="node6" href="$classRa_1_1Core_1_1Utils_1_1ColorBase.html#aaf67b196b10805750f12f3638ae81516" title="Ra::Core::Utils::ColorBase\l\&lt; Scalar \&gt;::Black" alt="" coords="269,201,455,243"/>
+<area shape="rect" id="node7" href="$namespaceRa_1_1Engine_1_1ShaderConfigurationFactory.html#a0bc60f21dbabd745961037f3d2f019c8" title="Get a configuration from the factory. " alt="" coords="248,267,476,308"/>
+<area shape="rect" id="node9" href="$classRa_1_1Engine_1_1RenderObject.html#a62e0eb3a7de5a7d352b565a28260cc06" title="Ra::Engine::RenderObject\l::setVisible" alt="" coords="271,332,453,373"/>
+<area shape="rect" id="node10" href="$classRa_1_1Engine_1_1RenderObject.html#ae1ea453e2b698cda9956586d11b9cfbd" title="Ra::Engine::RenderObject\l::setRenderTechnique" alt="" coords="271,397,453,439"/>
+<area shape="rect" id="node11" href="$classRa_1_1Engine_1_1RenderObject.html#ae8e94954e783a2012fd774598af1eb52" title="Ra::Engine::RenderObject\l::setMesh" alt="" coords="271,463,453,504"/>
+<area shape="rect" id="node5" href="$namespaceRa_1_1Core_1_1Geometry.html#aa04e6052d8911b1df1bd881474debb45" title="Ra::Core::Geometry::t" alt="" coords="558,143,718,170"/>
+<area shape="rect" id="node8" href="$classRa_1_1Engine_1_1ShaderConfiguration.html#a7e20a600c78e8627f0238b342f4b42f2" title="Ra::Engine::ShaderConfiguration\l::getDefaultShaderConfig" alt="" coords="524,267,752,308"/>
+</map>

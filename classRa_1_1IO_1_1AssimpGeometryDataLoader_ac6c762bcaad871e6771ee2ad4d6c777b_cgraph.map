@@ -1,0 +1,30 @@
+<map id="Ra::IO::AssimpGeometryDataLoader::loadGeometryData" name="Ra::IO::AssimpGeometryDataLoader::loadGeometryData">
+<area shape="rect" id="node2" href="$classRa_1_1IO_1_1AssimpGeometryDataLoader.html#af5c15d97fec98d1bbc62de339fab4928" title="Fill data with the GeometryData from mesh. " alt="" coords="263,449,472,491"/>
+<area shape="rect" id="node27" href="$classRa_1_1IO_1_1AssimpGeometryDataLoader.html#a9bd7b60295b35b11adaa3ae1238fa380" title="Fill data with the Material data from material. " alt="" coords="263,704,472,745"/>
+<area shape="rect" id="node29" href="$classRa_1_1IO_1_1AssimpGeometryDataLoader.html#ad45a978372614a6d443ebd32dc26d0c4" title="Fill data with the transformation data from node and parentFrame. " alt="" coords="263,289,472,331"/>
+<area shape="rect" id="node3" href="$classRa_1_1IO_1_1AssimpGeometryDataLoader.html#ae273721e27deb8f1461ee2c4d077ded0" title="Fill data with the name from mesh. " alt="" coords="530,253,739,295"/>
+<area shape="rect" id="node6" href="$classRa_1_1IO_1_1AssimpGeometryDataLoader.html#a41562a946e6a9f0fefd9cd9b311f490d" title="Fill data with the GeometryType from mesh. " alt="" coords="530,5,739,47"/>
+<area shape="rect" id="node8" href="$classRa_1_1IO_1_1AssimpGeometryDataLoader.html#a015c0e61580e9cf1b72ae9751844df68" title="Fill data with the vertices from mesh. " alt="" coords="530,319,739,360"/>
+<area shape="rect" id="node10" href="$classRa_1_1Core_1_1Asset_1_1GeometryData.html#a3a4ec38455b1ed79e0b80f90c4313c00" title="Return true if the object is a Line Mesh. " alt="" coords="539,384,731,425"/>
+<area shape="rect" id="node11" href="$classRa_1_1IO_1_1AssimpGeometryDataLoader.html#ad1d722a22c80e869ed4340ff34be34cb" title="Fill data with the lines from mesh. " alt="" coords="530,645,739,687"/>
+<area shape="rect" id="node13" href="$classRa_1_1IO_1_1AssimpGeometryDataLoader.html#a8efd5128ca84545148024394e24456f6" title="Fill data with the faces from mesh. " alt="" coords="530,763,739,804"/>
+<area shape="rect" id="node15" href="$classRa_1_1Core_1_1Asset_1_1GeometryData.html#a011898d87a536df9b8ff58d28db76648" title="Return true if the object is a Tetrahedron Mesh. " alt="" coords="539,449,731,491"/>
+<area shape="rect" id="node16" href="$classRa_1_1Core_1_1Asset_1_1GeometryData.html#a879dcba366fe25a42f1320e42d002e6d" title="Return true if the object is a Hexahedron Mesh. " alt="" coords="539,515,731,556"/>
+<area shape="rect" id="node17" href="$classRa_1_1IO_1_1AssimpGeometryDataLoader.html#a9dde85b325e30328e26e3a984def2e38" title="Fill data with the polyhedra from mesh. " alt="" coords="530,580,739,621"/>
+<area shape="rect" id="node18" href="$classRa_1_1IO_1_1AssimpGeometryDataLoader.html#a4e273972199d004dd227de544ad2f308" title="Fill data with the vertex normals from mesh. " alt="" coords="530,893,739,935"/>
+<area shape="rect" id="node21" href="$classRa_1_1IO_1_1AssimpGeometryDataLoader.html#a4ff00e2cca24724f418cb069f2975c3b" title="Fill data with the vertex tangent vectors from mesh. " alt="" coords="530,71,739,112"/>
+<area shape="rect" id="node23" href="$classRa_1_1IO_1_1AssimpGeometryDataLoader.html#a715eb5af20d150bae43bcc8fe7d66dae" title="Fill data with the vertex bitangent vectors from mesh. " alt="" coords="530,136,739,177"/>
+<area shape="rect" id="node25" href="$classRa_1_1IO_1_1AssimpGeometryDataLoader.html#a9ce1f0b5e1e63ec0980532da6d842957" title="Fill data with the vertex texture coordinates from mesh. " alt="" coords="520,828,749,869"/>
+<area shape="rect" id="node4" href="$namespaceRa_1_1IO.html#aef6c50424873964fcea0008be55d4a34" title="Ra::IO::assimpToCore" alt="" coords="815,490,971,517"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1Asset_1_1GeometryData.html#abf1770c6283a4f062b3b1f180cadb91c" title="Ra::Core::Asset::Geometry\lData::setName" alt="" coords="797,253,989,295"/>
+<area shape="rect" id="node7" href="$classRa_1_1Core_1_1Asset_1_1GeometryData.html#a7b0ddcd9c27162449300a1fd69b491a6" title="Set the type of geometry. " alt="" coords="797,5,989,47"/>
+<area shape="rect" id="node9" href="$classRa_1_1Core_1_1Asset_1_1GeometryData.html#a72272b6e82f2ef8d55443b962df07344" title="Return the list of vertices. " alt="" coords="797,319,989,360"/>
+<area shape="rect" id="node12" href="$classRa_1_1Core_1_1Asset_1_1GeometryData.html#a72983bc81153a7be462cb3c5ee45650b" title="Return the list of lines. " alt="" coords="797,645,989,687"/>
+<area shape="rect" id="node14" href="$classRa_1_1Core_1_1Asset_1_1GeometryData.html#a4683a5543ccaed63907eb19dd25b5a7e" title="Return the list of faces. " alt="" coords="797,763,989,804"/>
+<area shape="rect" id="node19" href="$classRa_1_1Core_1_1Asset_1_1GeometryData.html#a73a3a087566bd60eea1c04e5626bda7f" title="Return the list of vertex normals. " alt="" coords="797,959,989,1000"/>
+<area shape="rect" id="node20" href="$classRa_1_1Core_1_1Asset_1_1GeometryData.html#a853558748a15cc6cb17180202e80591c" title="Return the number of vertices. " alt="" coords="797,893,989,935"/>
+<area shape="rect" id="node22" href="$classRa_1_1Core_1_1Asset_1_1GeometryData.html#a748f0e0de9a8e7338adabf551e24852a" title="Return the list of vertex tangent vectors. " alt="" coords="797,71,989,112"/>
+<area shape="rect" id="node24" href="$classRa_1_1Core_1_1Asset_1_1GeometryData.html#a29d034b5e11d7431047c5ebd1e39d0f7" title="Return the list of vertex bitangent vectors. " alt="" coords="797,136,989,177"/>
+<area shape="rect" id="node26" href="$classRa_1_1Core_1_1Asset_1_1GeometryData.html#a762ed62a1450a0cbeed4465cc62f9843" title="Return the list of vertex texture coordinates. " alt="" coords="797,828,989,869"/>
+<area shape="rect" id="node28" href="$classRa_1_1Core_1_1Asset_1_1GeometryData.html#a4df3ae33c97163e9f31cc2f59e9a8374" title="Set the MaterialData for the object. " alt="" coords="539,959,731,1000"/>
+</map>

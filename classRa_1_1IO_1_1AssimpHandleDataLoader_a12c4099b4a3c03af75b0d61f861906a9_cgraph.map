@@ -1,0 +1,7 @@
+<map id="Ra::IO::AssimpHandleDataLoader::loadHandleTopologyData" name="Ra::IO::AssimpHandleDataLoader::loadHandleTopologyData">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a06a80ef7e42fd860557b93a1d035d283" title="DATA. " alt="" coords="285,5,489,47"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a525f0de4efbe0ba6818f592d80c8f321" title="Ra::Core::Asset::HandleData\l::getComponent" alt="" coords="285,71,489,112"/>
+<area shape="rect" id="node4" href="$namespaceRa_1_1IO.html#aef6c50424873964fcea0008be55d4a34" title="Ra::IO::assimpToCore" alt="" coords="309,137,465,163"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a619029e93f6bdd0c0fdfec40e8662448" title="Ra::Core::Asset::HandleData\l::getIndexOf" alt="" coords="285,188,489,229"/>
+<area shape="rect" id="node6" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a6ebdd020a0ba44289627779b6cbd71cb" title="Ra::Core::Asset::HandleData\l::setEdges" alt="" coords="285,253,489,295"/>
+</map>

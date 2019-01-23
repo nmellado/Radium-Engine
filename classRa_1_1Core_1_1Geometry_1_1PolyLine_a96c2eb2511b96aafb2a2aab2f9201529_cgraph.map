@@ -1,0 +1,6 @@
+<map id="Ra::Core::Geometry::PolyLine::projectOnSegment" name="Ra::Core::Geometry::PolyLine::projectOnSegment">
+<area shape="rect" id="node2" href="$namespaceRa_1_1Core_1_1Geometry.html#a749ee9e81862ef200b0b7540cc1f16bc" title="Project point Q on segment AB defined by point A and vector AB = (B &#45;A). " alt="" coords="291,5,441,47"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Geometry_1_1PolyLine.html#a0a39e8afbbe12da750ec49276a3f9269" title="Given a point on one of the segments identified by parameter tSegment in [0,1] and segment number..." alt="" coords="264,71,468,112"/>
+<area shape="rect" id="node3" href="$namespaceOpenMesh.html#a575b338f0fc9ecb5393d23e977e6ac38" title="OpenMesh::dot" alt="" coords="531,13,649,39"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1Geometry_1_1PolyLine.html#a2902446ee56d44c7ac8003e7b9335652" title="Get the total length of the line . " alt="" coords="516,71,664,112"/>
+</map>

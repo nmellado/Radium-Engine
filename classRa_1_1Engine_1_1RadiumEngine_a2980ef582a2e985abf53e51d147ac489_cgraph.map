@@ -1,0 +1,8 @@
+<map id="Ra::Engine::RadiumEngine::cleanup" name="Ra::Engine::RadiumEngine::cleanup">
+<area shape="rect" id="node2" href="$classRa_1_1Engine_1_1BlinnPhongMaterial.html#ac811cdb36c687637bc210a5c32b95d51" title="Remove the material from the material library. " alt="" coords="241,71,460,112"/>
+<area shape="rect" id="node3" href="$namespaceRa_1_1Engine_1_1EngineMaterialConverters.html#ac41449ebd949e8a7b1d93ff2a42acf92" title="remove a material converter " alt="" coords="508,5,771,47"/>
+<area shape="rect" id="node4" href="$namespaceRa_1_1Engine_1_1EngineRenderTechniques.html#a6e2ce86d7ae1f3822819477bf5bd7c74" title="remove a default builder " alt="" coords="510,71,769,112"/>
+<area shape="rect" id="node5" href="$classRa_1_1Engine_1_1BlinnPhongMaterialConverter.html#aa58f5ca952965587965d1c0586b8bbbc" title="Ra::Engine::BlinnPhongMaterial\lConverter::operator()" alt="" coords="530,136,749,177"/>
+<area shape="rect" id="node6" href="$classRa_1_1Core_1_1Asset_1_1AssetData.html#a3f4a6e18b60f2de4a23c8898a7341d21" title="Acces to the name of the asset. " alt="" coords="831,103,1025,144"/>
+<area shape="rect" id="node7" href="$classRa_1_1Engine_1_1BlinnPhongMaterial.html#a427cfdf1838a26e61cc8f19f5b775e21" title="Add an already existing texture to control the specified BSDF parameter. " alt="" coords="819,168,1037,209"/>
+</map>

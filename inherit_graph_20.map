@@ -1,0 +1,34 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title="STL class. " alt="" coords="5,607,132,634"/>
+<area shape="rect" id="node2" href="$structRa_1_1Core_1_1AlignedStdVector.html" title="Ra::Core::AlignedStdVector\l\&lt; ChildrenList \&gt;" alt="" coords="214,5,409,47"/>
+<area shape="rect" id="node3" href="$structRa_1_1Core_1_1AlignedStdVector.html" title="Ra::Core::AlignedStdVector\l\&lt; Core::Vector2i \&gt;" alt="" coords="214,71,409,112"/>
+<area shape="rect" id="node4" href="$structRa_1_1Core_1_1AlignedStdVector.html" title="Ra::Core::AlignedStdVector\l\&lt; Core::Vector2ui \&gt;" alt="" coords="214,136,409,177"/>
+<area shape="rect" id="node6" href="$structRa_1_1Core_1_1AlignedStdVector.html" title="Ra::Core::AlignedStdVector\l\&lt; Core::Vector3 \&gt;" alt="" coords="214,201,409,243"/>
+<area shape="rect" id="node8" href="$structRa_1_1Core_1_1AlignedStdVector.html" title="Ra::Core::AlignedStdVector\l\&lt; Core::Vector4 \&gt;" alt="" coords="214,267,409,308"/>
+<area shape="rect" id="node10" href="$structRa_1_1Core_1_1AlignedStdVector.html" title="Ra::Core::AlignedStdVector\l\&lt; Core::VectorNi \&gt;" alt="" coords="214,332,409,373"/>
+<area shape="rect" id="node11" href="$structRa_1_1Core_1_1AlignedStdVector.html" title="Ra::Core::AlignedStdVector\l\&lt; Core::VectorNui \&gt;" alt="" coords="214,397,409,439"/>
+<area shape="rect" id="node13" href="$structRa_1_1Core_1_1AlignedStdVector.html" title="Ra::Core::AlignedStdVector\l\&lt; Face \&gt;" alt="" coords="214,463,409,504"/>
+<area shape="rect" id="node15" href="$structRa_1_1Core_1_1AlignedStdVector.html" title="Ra::Core::AlignedStdVector\l\&lt; int \&gt;" alt="" coords="214,528,409,569"/>
+<area shape="rect" id="node16" href="$structRa_1_1Core_1_1AlignedStdVector.html" title="Ra::Core::AlignedStdVector\l\&lt; Ra::Core::Asset::HandleComponent\lData \&gt;" alt="" coords="180,593,443,649"/>
+<area shape="rect" id="node17" href="$structRa_1_1Core_1_1AlignedStdVector.html" title="Ra::Core::AlignedStdVector\l\&lt; Ra::Core::DualQuaternion \&gt;" alt="" coords="204,672,419,713"/>
+<area shape="rect" id="node18" href="$structRa_1_1Core_1_1AlignedStdVector.html" title="Ra::Core::AlignedStdVector\l\&lt; Ra::Core::Vector3ui \&gt;" alt="" coords="214,737,409,779"/>
+<area shape="rect" id="node20" href="$structRa_1_1Core_1_1AlignedStdVector.html" title="Ra::Core::AlignedStdVector\l\&lt; Scalar \&gt;" alt="" coords="214,803,409,844"/>
+<area shape="rect" id="node22" href="$structRa_1_1Core_1_1AlignedStdVector.html" title="Ra::Core::AlignedStdVector\l\&lt; uint8_t \&gt;" alt="" coords="214,868,409,909"/>
+<area shape="rect" id="node23" href="$structRa_1_1Core_1_1AlignedStdVector.html" title="Ra::Core::AlignedStdVector\&lt; V \&gt;" alt="" coords="195,934,428,961"/>
+<area shape="rect" id="node25" href="$structRa_1_1Core_1_1AlignedStdVector.html" title="Ra::Core::AlignedStdVector\l\&lt; Vector \&gt;" alt="" coords="214,985,409,1027"/>
+<area shape="rect" id="node27" href="$structRa_1_1Core_1_1AlignedStdVector.html" title="Ra::Core::AlignedStdVector\l\&lt; Vector3 \&gt;" alt="" coords="214,1051,409,1092"/>
+<area shape="rect" id="node29" href="$structRa_1_1Core_1_1AlignedStdVector.html" title="Ra::Core::AlignedStdVector\l\&lt; Vector3ui \&gt;" alt="" coords="214,1116,409,1157"/>
+<area shape="rect" id="node31" href="$structRa_1_1Core_1_1AlignedStdVector.html" title="Shortcut for the ubiquitous aligned std::vector Uses Eigen&#39;s aligned allocator, as stated in http://e..." alt="" coords="196,1182,427,1209"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1VectorArray.html" title="Ra::Core::VectorArray\l\&lt; Core::Vector2ui \&gt;" alt="" coords="511,136,669,177"/>
+<area shape="rect" id="node7" href="$classRa_1_1Core_1_1VectorArray.html" title="Ra::Core::VectorArray\l\&lt; Core::Vector3 \&gt;" alt="" coords="511,201,669,243"/>
+<area shape="rect" id="node9" href="$classRa_1_1Core_1_1VectorArray.html" title="Ra::Core::VectorArray\l\&lt; Core::Vector4 \&gt;" alt="" coords="511,267,669,308"/>
+<area shape="rect" id="node12" href="$classRa_1_1Core_1_1VectorArray.html" title="Ra::Core::VectorArray\l\&lt; Core::VectorNui \&gt;" alt="" coords="511,397,669,439"/>
+<area shape="rect" id="node14" href="$classRa_1_1Core_1_1VectorArray.html" title="Ra::Core::VectorArray\l\&lt; Face \&gt;" alt="" coords="511,463,669,504"/>
+<area shape="rect" id="node19" href="$classRa_1_1Core_1_1VectorArray.html" title="Ra::Core::VectorArray\l\&lt; Ra::Core::Vector3ui \&gt;" alt="" coords="503,737,677,779"/>
+<area shape="rect" id="node21" href="$classRa_1_1Core_1_1VectorArray_3_01Scalar_01_4.html" title="This specialization stores an array of scalars which can be used as a dynamic Eigen column vector..." alt="" coords="511,803,669,844"/>
+<area shape="rect" id="node24" href="$classRa_1_1Core_1_1VectorArray.html" title="This class is a wrapper around a std::vector of Core::Vectors. " alt="" coords="491,934,689,961"/>
+<area shape="rect" id="node26" href="$classRa_1_1Core_1_1VectorArray.html" title="Ra::Core::VectorArray\l\&lt; Vector \&gt;" alt="" coords="511,985,669,1027"/>
+<area shape="rect" id="node28" href="$classRa_1_1Core_1_1VectorArray.html" title="Ra::Core::VectorArray\l\&lt; Vector3 \&gt;" alt="" coords="511,1051,669,1092"/>
+<area shape="rect" id="node30" href="$classRa_1_1Core_1_1VectorArray.html" title="Ra::Core::VectorArray\l\&lt; Vector3ui \&gt;" alt="" coords="511,1116,669,1157"/>
+<area shape="rect" id="node32" href="$classRa_1_1Core_1_1VectorArray.html" title="Ra::Core::VectorArray\&lt; T \&gt;" alt="" coords="492,1182,688,1209"/>
+</map>

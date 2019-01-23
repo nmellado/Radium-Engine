@@ -1,0 +1,11 @@
+<map id="Ra::Engine::DrawPrimitives::Sphere" name="Ra::Engine::DrawPrimitives::Sphere">
+<area shape="rect" id="node2" href="$namespaceRa_1_1Core_1_1Geometry.html#a6b6b58787a02c6aa51f66d7860384131" title="Create a spherical mesh by subdivision of an icosahedron. " alt="" coords="244,79,415,120"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#a6ef9dbd18c0501f2ffd1316be6be56ce" title="Access the vertices positions. " alt="" coords="746,5,917,47"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#ad7d3f6272b902171740e50232ba56114" title="Access the vertices normals. " alt="" coords="745,188,917,229"/>
+<area shape="rect" id="node5" href="$namespaceRa_1_1Core_1_1Vector.html#a42d87f3bd0658bac532d72f0ec528827" title="Get the cosine of the angle between two vectors. " alt="" coords="503,145,657,171"/>
+<area shape="rect" id="node6" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#a0b294c697e094dcc62b3adb3c0ac16af" title="Check that the mesh is well built, asserting when it is not. " alt="" coords="463,79,697,120"/>
+<area shape="rect" id="node7" href="$namespaceRa_1_1Core_1_1Geometry.html#aa04e6052d8911b1df1bd881474debb45" title="Ra::Core::Geometry::t" alt="" coords="751,137,911,163"/>
+<area shape="rect" id="node8" href="$namespaceRa_1_1Core_1_1Geometry.html#a178f2b7309fe2ea5bc31a3abcb25368e" title="Ra::Core::Geometry\l::triangleArea" alt="" coords="757,71,905,112"/>
+<area shape="rect" id="node9" href="$namespaceOpenMesh.html#a71e7f1dd3eac016d2b8245ac408a291c" title="OpenMesh::cross" alt="" coords="965,53,1097,79"/>
+<area shape="rect" id="node10" href="$namespaceOpenMesh.html#a8205f789ce08919bc11c58383574596c" title="OpenMesh::norm" alt="" coords="965,103,1097,130"/>
+</map>

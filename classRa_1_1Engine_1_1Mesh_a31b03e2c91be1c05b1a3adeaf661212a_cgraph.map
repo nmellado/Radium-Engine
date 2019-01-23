@@ -1,0 +1,7 @@
+<map id="Ra::Engine::Mesh::colorize" name="Ra::Engine::Mesh::colorize">
+<area shape="rect" id="node2" href="$classRa_1_1Engine_1_1Mesh.html#a1a0dd0e87ce6e6c7d6177c101046c8bf" title="Returns the underlying TriangleMesh. " alt="" coords="241,27,465,54"/>
+<area shape="rect" id="node3" href="$classRa_1_1Engine_1_1Mesh.html#a541f0a8471912ff23e643eda0f592b7b" title="Set additionnal vertex data. " alt="" coords="256,78,451,105"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#adfb86f61e519e83e15d6f3bb32d76eb9" title="Return true if h refers to an existing attribute in *this. " alt="" coords="523,5,683,47"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#a80e6c7e3b1dc8f1a6bd1913c5f7d1a05" title="Add attribute with the given name. " alt="" coords="513,71,692,112"/>
+<area shape="rect" id="node6" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#a209037ce5a11ec8539a9ada7ba763e8c" title="Get attribute by handle. " alt="" coords="515,136,691,177"/>
+</map>

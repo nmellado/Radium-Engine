@@ -1,0 +1,13 @@
+<map id="Ra::Core::Geometry::makeCylinder" name="Ra::Core::Geometry::makeCylinder">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#a6ef9dbd18c0501f2ffd1316be6be56ce" title="Access the vertices positions. " alt="" coords="485,5,655,47"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#ad7d3f6272b902171740e50232ba56114" title="Access the vertices normals. " alt="" coords="484,71,656,112"/>
+<area shape="rect" id="node4" href="$namespaceRa_1_1Core_1_1Vector.html#a0464b705193d326a5102691dd58d753d" title="Get two vectors orthogonal to a given vector. " alt="" coords="206,195,431,236"/>
+<area shape="rect" id="node7" href="$namespaceRa_1_1Core_1_1Vector.html#a42d87f3bd0658bac532d72f0ec528827" title="Get the cosine of the angle between two vectors. " alt="" coords="241,261,396,287"/>
+<area shape="rect" id="node8" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#a0b294c697e094dcc62b3adb3c0ac16af" title="Check that the mesh is well built, asserting when it is not. " alt="" coords="201,129,436,171"/>
+<area shape="rect" id="node5" href="$namespaceRa_1_1Core_1_1Math.html#a90f0fe9079f5bb86c721ea4b61738470" title="Returns the sign of any numeric type as { &#45;1, 0, 1}. " alt="" coords="495,253,645,279"/>
+<area shape="rect" id="node6" href="$namespaceRa_1_1Core_1_1Math.html#ae4e681e0738fe7e5bfd028c6270b597a" title="Ra::Core::Math::signum" alt="" coords="704,253,875,279"/>
+<area shape="rect" id="node9" href="$namespaceRa_1_1Core_1_1Geometry.html#aa04e6052d8911b1df1bd881474debb45" title="Ra::Core::Geometry::t" alt="" coords="490,202,650,229"/>
+<area shape="rect" id="node10" href="$namespaceRa_1_1Core_1_1Geometry.html#a178f2b7309fe2ea5bc31a3abcb25368e" title="Ra::Core::Geometry\l::triangleArea" alt="" coords="496,136,644,177"/>
+<area shape="rect" id="node11" href="$namespaceOpenMesh.html#a71e7f1dd3eac016d2b8245ac408a291c" title="OpenMesh::cross" alt="" coords="723,169,855,195"/>
+<area shape="rect" id="node12" href="$namespaceOpenMesh.html#a8205f789ce08919bc11c58383574596c" title="OpenMesh::norm" alt="" coords="723,118,855,145"/>
+</map>

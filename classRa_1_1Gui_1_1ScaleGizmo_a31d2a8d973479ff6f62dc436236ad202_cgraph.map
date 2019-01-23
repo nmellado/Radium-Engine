@@ -1,0 +1,18 @@
+<map id="Ra::Gui::ScaleGizmo::mouseMove" name="Ra::Gui::ScaleGizmo::mouseMove">
+<area shape="rect" id="node2" href="$namespaceRa_1_1Gui.html#afe2329e48512356b2cce3d8add41c665" title="Ra::Gui::isKeyPressed" alt="" coords="217,5,376,32"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Utils_1_1ColorBase.html#a983f43f3e20bc518a4c2c35fadd4cc7a" title="Ra::Core::Utils::ColorBase\l\&lt; Scalar \&gt;::Yellow" alt="" coords="204,57,389,98"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Utils_1_1ColorBase.html#a1b7a2d694cf0fe9382aa80868253f0d1" title="Ra::Core::Utils::ColorBase\l\&lt; Scalar \&gt;::Red" alt="" coords="204,122,389,163"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1Utils_1_1ColorBase.html#a54193413c10301c1edf46fc41fb09dfb" title="Ra::Core::Utils::ColorBase\l\&lt; Scalar \&gt;::Green" alt="" coords="204,187,389,229"/>
+<area shape="rect" id="node6" href="$classRa_1_1Core_1_1Utils_1_1ColorBase.html#aed9cce82f3b09c3ec32a9fdc898d3b7f" title="Ra::Core::Utils::ColorBase\l\&lt; Scalar \&gt;::Blue" alt="" coords="204,253,389,294"/>
+<area shape="rect" id="node7" href="$classRa_1_1Gui_1_1Gizmo.html#a59f612603ee6c129a563ee6829abbc63" title="Ra::Gui::Gizmo::findPoint\lOnPlane" alt="" coords="207,318,386,359"/>
+<area shape="rect" id="node14" href="$classRa_1_1Gui_1_1Gizmo.html#a9f381cac5f535c0f66b04f02856f057d" title="Ra::Gui::Gizmo::findPoint\lOnAxis" alt="" coords="207,383,386,425"/>
+<area shape="rect" id="node17" href="$namespaceRa_1_1Core_1_1QuaternionUtils.html#ae49b72169aa4a3cb300979b34c6e1289" title="Returns the quaternion q multipled by a scalar factor of k. " alt="" coords="205,449,388,490"/>
+<area shape="rect" id="node8" href="$classRa_1_1Engine_1_1Camera.html#a7ab3b8e1e0ab5ee239cc7152a56b74ed" title="Return a ray emanating from the camera, passing by the point given by screen coordinates x and y..." alt="" coords="437,285,588,326"/>
+<area shape="rect" id="node12" href="$namespaceRa_1_1Core_1_1Geometry.html#a8b8fe68d162f9a144a127573ca436286" title="Intersect a ray with an infinite plane defined by point A and normal. " alt="" coords="439,350,587,391"/>
+<area shape="rect" id="node9" href="$classRa_1_1Engine_1_1Camera.html#a724a052e94817af7e602129467c8696f" title="Return the position. " alt="" coords="636,289,784,330"/>
+<area shape="rect" id="node10" href="$classRa_1_1Engine_1_1Camera.html#ad1d6eb41b5e8d52cd2ddecf47f1b2053" title="Return the point on the screen plane (near plane) represented by screen coordinates pix..." alt="" coords="636,223,784,265"/>
+<area shape="rect" id="node11" href="$classRa_1_1Engine_1_1Camera.html#adb545a4a1f889d63ce4fc9a41cdeef2a" title="Return the projection matrix. " alt="" coords="832,223,980,265"/>
+<area shape="rect" id="node13" href="$namespaceOpenMesh.html#a575b338f0fc9ecb5393d23e977e6ac38" title="OpenMesh::dot" alt="" coords="651,357,769,384"/>
+<area shape="rect" id="node15" href="$classRa_1_1Engine_1_1Camera.html#a23be7aa714c0e9c2a9429dfc9ef2c53a" title="Return the direction the camera is looking at. " alt="" coords="439,415,587,457"/>
+<area shape="rect" id="node16" href="$classRa_1_1Engine_1_1Camera.html#adfc7c573c5cedb70aadd8afd8274253b" title="Return the up vector. " alt="" coords="439,481,587,522"/>
+</map>

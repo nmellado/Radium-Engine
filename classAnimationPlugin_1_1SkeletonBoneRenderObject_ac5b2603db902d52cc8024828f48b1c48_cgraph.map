@@ -1,0 +1,5 @@
+<map id="AnimationPlugin::SkeletonBoneRenderObject::setXray" name="AnimationPlugin::SkeletonBoneRenderObject::setXray">
+<area shape="rect" id="node2" href="$classRa_1_1Engine_1_1RenderObjectManager.html#a13fc919e9fa01bfb36e67bc9011d325f" title="Returns the render object corresponding to the given index. " alt="" coords="249,5,441,47"/>
+<area shape="rect" id="node3" href="$classRa_1_1Engine_1_1RenderObjectManager.html#a088feae4339349a81b7b6635b38aead1" title="Returns true if the index points to a valid render object. " alt="" coords="489,5,672,47"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Utils_1_1Index.html#ac7a1b710e6b95834a562c27e2f6c0f4b" title="DESTRUCTOR: Must not be defined, we need it trivial to be constexpr. " alt="" coords="720,5,875,47"/>
+</map>

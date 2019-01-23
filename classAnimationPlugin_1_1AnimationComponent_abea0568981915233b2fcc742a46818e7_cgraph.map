@@ -1,0 +1,17 @@
+<map id="AnimationPlugin::AnimationComponent::setTransform" name="AnimationPlugin::AnimationComponent::setTransform">
+<area shape="rect" id="node2" href="$classAnimationPlugin_1_1AnimationComponent.html#a9f69f49ba7bf55b859c7db7d2d5afc09" title="Returns true if a transform can be edited with the render object index given as a key..." alt="" coords="252,172,451,213"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Animation_1_1Skeleton.html#aecd2137452897bd64ba998e255dd3751" title="Ra::Core::Animation\l::Skeleton::getTransform" alt="" coords="262,237,441,279"/>
+<area shape="rect" id="node13" href="$classRa_1_1Core_1_1AdjacencyList.html#a9c0e48ccbcfec3e3c35bebf6a45c7b12" title="Ra::Core::AdjacencyList\l::parents" alt="" coords="931,332,1101,373"/>
+<area shape="rect" id="node14" href="$classRa_1_1Core_1_1AdjacencyList.html#a23393ccd75883f2eb35196d7c82ee94f" title="Ra::Core::AdjacencyList\l::children" alt="" coords="931,405,1101,447"/>
+<area shape="rect" id="node15" href="$classRa_1_1Core_1_1Animation_1_1Skeleton.html#a2422e1bb4c3016f4b07f03696e6a8383" title="Get the i&#45;th bone endpoints. " alt="" coords="696,412,883,453"/>
+<area shape="rect" id="node16" href="$classRa_1_1Core_1_1Animation_1_1Skeleton.html#a54bd8f8d55c878fa0e49c0f1c971f7aa" title="Set the i&#45;th transform to T, which is given in the MODE space. " alt="" coords="263,303,440,344"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Animation_1_1Skeleton.html#a5679e1beb544b515c4539ce48a2f2ba3" title="Ra::Core::Animation\l::Skeleton::size" alt="" coords="499,143,648,184"/>
+<area shape="rect" id="node5" href="$namespaceRa_1_1Core_1_1Animation.html#a93d6305ed74ab59961969dce601714c2" title="Ra::Core::Animation\l::operator\&lt;\&lt;" alt="" coords="715,143,864,184"/>
+<area shape="rect" id="node6" href="$classRa_1_1Core_1_1Animation_1_1Handle.html#af2c003e7a85469470d5591b019e8ab80" title="Ra::Core::Animation\l::Handle::getLabel" alt="" coords="941,5,1091,47"/>
+<area shape="rect" id="node8" href="$classRa_1_1Core_1_1AdjacencyList.html#a4e87e76f65f897cbe99d805b6cb35055" title="Return true if a node is a root node. " alt="" coords="931,201,1101,243"/>
+<area shape="rect" id="node10" href="$classRa_1_1Core_1_1AdjacencyList.html#a37f39f4b1560b523a42ec3fb7187da2e" title="Return true if the node is a joint node. ( |child| == 1 ) " alt="" coords="931,71,1101,112"/>
+<area shape="rect" id="node11" href="$classRa_1_1Core_1_1AdjacencyList.html#a4ed5a37c628d3a1375f14f40bcd219e6" title="Return true if the node is a branch node. ( |child| &gt; 1 ) " alt="" coords="931,136,1101,177"/>
+<area shape="rect" id="node12" href="$classRa_1_1Core_1_1AdjacencyList.html#a068632657bfda6ab9034a879372a45e8" title="Return true if the node is a leaf node. " alt="" coords="931,267,1101,308"/>
+<area shape="rect" id="node7" href="$classRa_1_1Core_1_1Animation_1_1Handle.html#aba876355658e5f8953033d3bb8f18533" title="Ra::Core::Animation\l::Handle::size" alt="" coords="1160,5,1309,47"/>
+<area shape="rect" id="node9" href="$classRa_1_1Core_1_1AdjacencyList.html#a15e425543855966a22c3b9339aa27b4d" title="Return the number of nodes in the graph. " alt="" coords="1149,169,1320,211"/>
+</map>

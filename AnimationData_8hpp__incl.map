@@ -1,0 +1,13 @@
+<map id="/home/travis/build/STORM&#45;IRIT/Radium&#45;Engine/src/Core/Asset/AnimationData.hpp" name="/home/travis/build/STORM&#45;IRIT/Radium&#45;Engine/src/Core/Asset/AnimationData.hpp">
+<area shape="rect" id="node4" href="$AnimationTime_8hpp.html" title="Core/Animation/Animation\lTime.hpp" alt="" coords="47,259,237,300"/>
+<area shape="rect" id="node13" href="$KeyTransform_8hpp.html" title="Core/Animation/KeyTransform.hpp" alt="" coords="627,109,865,136"/>
+<area shape="rect" id="node16" href="$RaCore_8hpp.html" title="Core/RaCore.hpp" alt="" coords="991,348,1122,375"/>
+<area shape="rect" id="node28" href="$AssetData_8hpp.html" title="Core/Asset/AssetData.hpp" alt="" coords="941,184,1132,211"/>
+<area shape="rect" id="node29" href="$AnimationData_8inl.html" title="Core/Asset/AnimationData.inl" alt="" coords="1194,109,1405,136"/>
+<area shape="rect" id="node5" href="$CoreMacros_8hpp.html" title="Core/CoreMacros.hpp" alt="" coords="969,423,1129,449"/>
+<area shape="rect" id="node14" href="$Interpolation_8hpp.html" title="Core/Animation/Interpolation.hpp" alt="" coords="631,184,864,211"/>
+<area shape="rect" id="node20" href="$KeyFrame_8hpp.html" title="Core/Animation/KeyFrame.hpp" alt="" coords="363,184,577,211"/>
+<area shape="rect" id="node15" href="$Types_8hpp.html" title="Core/Math/Types.hpp" alt="" coords="693,266,847,293"/>
+<area shape="rect" id="node23" href="$AlignedAllocator_8hpp.html" title="Core/Containers/AlignedAllocator.hpp" alt="" coords="333,266,591,293"/>
+<area shape="rect" id="node30" href="$Log_8hpp.html" title="Core/Utils/Log.hpp" alt="" coords="1213,184,1351,211"/>
+</map>

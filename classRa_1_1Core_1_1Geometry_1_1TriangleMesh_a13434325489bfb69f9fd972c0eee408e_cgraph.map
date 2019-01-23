@@ -1,0 +1,5 @@
+<map id="Ra::Core::Geometry::TriangleMesh::append" name="Ra::Core::Geometry::TriangleMesh::append">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Utils_1_1AttribManager.html#a191ecf090eaf0b6d52ed390938e1e0c5" title="Return true if *this and other have the same attributes, same amount and same names. " alt="" coords="221,5,432,47"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#a6ef9dbd18c0501f2ffd1316be6be56ce" title="Access the vertices positions. " alt="" coords="241,71,412,112"/>
+<area shape="rect" id="node4" href="$namespaceRa_1_1Core_1_1Geometry.html#aa04e6052d8911b1df1bd881474debb45" title="Ra::Core::Geometry::t" alt="" coords="247,137,407,163"/>
+</map>

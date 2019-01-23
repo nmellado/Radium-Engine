@@ -1,0 +1,8 @@
+<map id="Ra::Engine::BlinnPhongMaterial" name="Ra::Engine::BlinnPhongMaterial">
+<area shape="rect" id="node2" href="$classRa_1_1Engine_1_1Material.html" title="Base class for materials/ Do not assume a given Material representation but only make the difference ..." alt="" coords="92,844,255,1039"/>
+<area shape="rect" id="node4" href="$classbool.html" title="{bool\n||}" alt="" coords="149,352,198,429"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="237,352,323,429"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="211,5,349,97"/>
+<area shape="rect" id="node8" href="$classRa_1_1Core_1_1Utils_1_1ColorBase.html" title="{Ra::Core::Utils::ColorBase\l\&lt; Scalar \&gt;\n||+ ColorBase()\l+ ColorBase()\l+ ColorBase()\l+ ColorBase()\l+ operator VectorType()\l+ rgb()\l+ rgb()\l+ alpha()\l+ alpha()\l+ toRGBA32()\l+ toARGB32()\l+ fromRGB()\l+ Alpha()\l+ Black()\l+ Red()\l+ Green()\l+ Blue()\l+ Yellow()\l+ Magenta()\l+ Cyan()\l+ White()\l+ Grey()\l+ Skin()\l+ fromChars()\l+ fromRGBA32()\l+ fromARGB32()\l+ fromHSV()\l+ scatter()\l}" alt="" coords="354,697,539,1185"/>
+<area shape="rect" id="node10" href="$classRa_1_1Core_1_1Utils_1_1ColorBase.html" title="{Ra::Core::Utils::ColorBase\l\&lt; _Scalar \&gt;\n||+ ColorBase()\l+ ColorBase()\l+ ColorBase()\l+ ColorBase()\l+ operator VectorType()\l+ rgb()\l+ rgb()\l+ alpha()\l+ alpha()\l+ toRGBA32()\l+ toARGB32()\l+ fromRGB()\l+ Alpha()\l+ Black()\l+ Red()\l+ Green()\l+ Blue()\l+ Yellow()\l+ Magenta()\l+ Cyan()\l+ White()\l+ Grey()\l+ Skin()\l+ fromChars()\l+ fromRGBA32()\l+ fromARGB32()\l+ fromHSV()\l+ scatter()\l}" alt="" coords="539,147,725,635"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Ra::Core::Geometry::CatmullClarkSubdivider::recompute" name="Ra::Core::Geometry::CatmullClarkSubdivider::recompute">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Geometry_1_1TopologicalMesh.html#a9c1e8b9464b438b78d2af7fc080634e0" title="Return a handle to the halfedge property storing vertices indices within the TriangleMesh *this has b..." alt="" coords="232,5,444,61"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Geometry_1_1TopologicalMesh.html#a1c87413e2fca885e3317008c3b122847" title="Return the half&#45;edge associated with a given vertex and face. " alt="" coords="240,85,436,141"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Geometry_1_1TopologicalMesh.html#a33d69a73525e3b145b886483ae178406" title="Return a handle to the halfedge property storing vertices indices within the TriangleMesh returned by..." alt="" coords="232,165,444,221"/>
+</map>

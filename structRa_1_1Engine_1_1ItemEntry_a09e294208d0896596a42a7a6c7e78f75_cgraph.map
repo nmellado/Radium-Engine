@@ -1,0 +1,10 @@
+<map id="Ra::Engine::ItemEntry::isSelectable" name="Ra::Engine::ItemEntry::isSelectable">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Utils_1_1IndexedObject.html#accf1e1447b2ed890b10080fb44a91e6c" title="Ra::Core::Utils::Indexed\lObject::getIndex" alt="" coords="223,5,393,47"/>
+<area shape="rect" id="node3" href="$structRa_1_1Engine_1_1ItemEntry.html#a898047549069e5b64d3a9a65c058af56" title="Returns true if the item represents a render object. " alt="" coords="229,71,387,112"/>
+<area shape="rect" id="node7" href="$classRa_1_1Engine_1_1RadiumEngine.html#a58b27bc600ea769f68b0e2938abc7862" title="Manager getters. " alt="" coords="212,136,404,177"/>
+<area shape="rect" id="node8" href="$classRa_1_1Engine_1_1RenderObjectManager.html#a13fc919e9fa01bfb36e67bc9011d325f" title="Returns the render object corresponding to the given index. " alt="" coords="212,201,404,243"/>
+<area shape="rect" id="node4" href="$structRa_1_1Engine_1_1ItemEntry.html#a1fb9fdd74413a1fa5878f53c1cfcf8fd" title="Debug checks. " alt="" coords="464,71,623,112"/>
+<area shape="rect" id="node6" href="$classRa_1_1Core_1_1Utils_1_1Index.html#ac7a1b710e6b95834a562c27e2f6c0f4b" title="DESTRUCTOR: Must not be defined, we need it trivial to be constexpr. " alt="" coords="683,167,837,208"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1Utils_1_1Index.html#ac7d6c68387fe147f7a13668ac30a4533" title="INVALID. " alt="" coords="683,71,837,112"/>
+<area shape="rect" id="node9" href="$classRa_1_1Engine_1_1RenderObjectManager.html#a088feae4339349a81b7b6635b38aead1" title="Returns true if the index points to a valid render object. " alt="" coords="452,197,635,239"/>
+</map>

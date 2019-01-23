@@ -1,0 +1,8 @@
+<map id="Ra::Core::Geometry::TopologicalMesh::interpolateAllProps" name="Ra::Core::Geometry::TopologicalMesh::interpolateAllProps">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Geometry_1_1TopologicalMesh.html#abcc0ec560fca4ee96ae325b20ee501e9" title="Interpolate normal property on edge center (after edge split). " alt="" coords="264,5,475,61"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Geometry_1_1TopologicalMesh.html#a41d41cb8e6019a7237b169c2d8e6aad6" title="Interpolate props on edge center (after edge split). " alt="" coords="264,85,475,141"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Geometry_1_1TopologicalMesh.html#a324e5fbc84f49bcf3c64488cfcf61c7a" title="Ra::Core::Geometry\l::TopologicalMesh::getFloat\lPropsHandles" alt="" coords="273,165,466,221"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1Geometry_1_1TopologicalMesh.html#a4e39246a1bcd24efee58de472195b4d4" title="Ra::Core::Geometry\l::TopologicalMesh::getVector2\lPropsHandles" alt="" coords="264,245,475,301"/>
+<area shape="rect" id="node6" href="$classRa_1_1Core_1_1Geometry_1_1TopologicalMesh.html#aedacfa21cfb80c83200daf1998a410a8" title="Ra::Core::Geometry\l::TopologicalMesh::getVector3\lPropsHandles" alt="" coords="264,325,475,381"/>
+<area shape="rect" id="node7" href="$classRa_1_1Core_1_1Geometry_1_1TopologicalMesh.html#a32fc981a9fe179cce958398a92a0ae9b" title="Ra::Core::Geometry\l::TopologicalMesh::getVector4\lPropsHandles" alt="" coords="264,405,475,461"/>
+</map>

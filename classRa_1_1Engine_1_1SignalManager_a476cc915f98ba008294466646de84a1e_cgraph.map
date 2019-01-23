@@ -1,0 +1,6 @@
+<map id="Ra::Engine::SignalManager::fireRenderObjectRemoved" name="Ra::Engine::SignalManager::fireRenderObjectRemoved">
+<area shape="rect" id="node2" href="$structRa_1_1Engine_1_1ItemEntry.html#a898047549069e5b64d3a9a65c058af56" title="Returns true if the item represents a render object. " alt="" coords="248,39,407,80"/>
+<area shape="rect" id="node3" href="$structRa_1_1Engine_1_1ItemEntry.html#a1fb9fdd74413a1fa5878f53c1cfcf8fd" title="Debug checks. " alt="" coords="455,5,613,47"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1Utils_1_1Index.html#ac7a1b710e6b95834a562c27e2f6c0f4b" title="DESTRUCTOR: Must not be defined, we need it trivial to be constexpr. " alt="" coords="457,71,611,112"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Utils_1_1Index.html#ac7d6c68387fe147f7a13668ac30a4533" title="INVALID. " alt="" coords="661,5,816,47"/>
+</map>

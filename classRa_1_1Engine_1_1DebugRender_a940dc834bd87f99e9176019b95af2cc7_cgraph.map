@@ -1,0 +1,6 @@
+<map id="Ra::Engine::DebugRender::addFrame" name="Ra::Engine::DebugRender::addFrame">
+<area shape="rect" id="node2" href="$namespaceRa_1_1Engine_1_1DrawPrimitives.html#abff435f32f2575b0871997617170237a" title="Displays a 3D frame representing the given transform. " alt="" coords="236,71,427,112"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Utils_1_1ColorBase.html#a1b7a2d694cf0fe9382aa80868253f0d1" title="Ra::Core::Utils::ColorBase\l\&lt; Scalar \&gt;::Red" alt="" coords="475,5,660,47"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Utils_1_1ColorBase.html#a54193413c10301c1edf46fc41fb09dfb" title="Ra::Core::Utils::ColorBase\l\&lt; Scalar \&gt;::Green" alt="" coords="475,71,660,112"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1Utils_1_1ColorBase.html#aed9cce82f3b09c3ec32a9fdc898d3b7f" title="Ra::Core::Utils::ColorBase\l\&lt; Scalar \&gt;::Blue" alt="" coords="475,136,660,177"/>
+</map>

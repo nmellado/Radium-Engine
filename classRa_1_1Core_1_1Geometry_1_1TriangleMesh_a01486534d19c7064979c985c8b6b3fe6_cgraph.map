@@ -1,0 +1,6 @@
+<map id="Ra::Core::Geometry::TriangleMesh::castRay" name="Ra::Core::Geometry::TriangleMesh::castRay">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#a6ef9dbd18c0501f2ffd1316be6be56ce" title="Access the vertices positions. " alt="" coords="224,5,395,47"/>
+<area shape="rect" id="node3" href="$namespaceRa_1_1Core_1_1Geometry.html#a0f3fe94cd4330b6ff4b23ad27e909e3e" title="Intersect a ray with a triangle abc. " alt="" coords="235,71,383,112"/>
+<area shape="rect" id="node5" href="$namespaceOpenMesh.html#a71e7f1dd3eac016d2b8245ac408a291c" title="OpenMesh::cross" alt="" coords="243,137,375,163"/>
+<area shape="rect" id="node4" href="$namespaceRa_1_1Core_1_1Geometry.html#aa04e6052d8911b1df1bd881474debb45" title="Ra::Core::Geometry::t" alt="" coords="443,78,603,105"/>
+</map>

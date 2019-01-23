@@ -1,0 +1,12 @@
+<map id="Ra::Core::Animation::Skeleton::size" name="Ra::Core::Animation::Skeleton::size">
+<area shape="rect" id="node2" href="$namespaceRa_1_1Core_1_1Animation.html#a93d6305ed74ab59961969dce601714c2" title="Ra::Core::Animation\l::operator\&lt;\&lt;" alt="" coords="203,201,352,243"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Animation_1_1Handle.html#af2c003e7a85469470d5591b019e8ab80" title="Ra::Core::Animation\l::Handle::getLabel" alt="" coords="411,5,560,47"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1AdjacencyList.html#a4e87e76f65f897cbe99d805b6cb35055" title="Return true if a node is a root node. " alt="" coords="400,71,571,112"/>
+<area shape="rect" id="node7" href="$classRa_1_1Core_1_1AdjacencyList.html#a37f39f4b1560b523a42ec3fb7187da2e" title="Return true if the node is a joint node. ( |child| == 1 ) " alt="" coords="400,136,571,177"/>
+<area shape="rect" id="node8" href="$classRa_1_1Core_1_1AdjacencyList.html#a4ed5a37c628d3a1375f14f40bcd219e6" title="Return true if the node is a branch node. ( |child| &gt; 1 ) " alt="" coords="400,201,571,243"/>
+<area shape="rect" id="node9" href="$classRa_1_1Core_1_1AdjacencyList.html#a068632657bfda6ab9034a879372a45e8" title="Return true if the node is a leaf node. " alt="" coords="400,267,571,308"/>
+<area shape="rect" id="node10" href="$classRa_1_1Core_1_1AdjacencyList.html#a9c0e48ccbcfec3e3c35bebf6a45c7b12" title="Ra::Core::AdjacencyList\l::parents" alt="" coords="400,332,571,373"/>
+<area shape="rect" id="node11" href="$classRa_1_1Core_1_1AdjacencyList.html#a23393ccd75883f2eb35196d7c82ee94f" title="Ra::Core::AdjacencyList\l::children" alt="" coords="400,397,571,439"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Animation_1_1Handle.html#aba876355658e5f8953033d3bb8f18533" title="Ra::Core::Animation\l::Handle::size" alt="" coords="629,5,779,47"/>
+<area shape="rect" id="node6" href="$classRa_1_1Core_1_1AdjacencyList.html#a15e425543855966a22c3b9339aa27b4d" title="Return the number of nodes in the graph. " alt="" coords="619,169,789,211"/>
+</map>

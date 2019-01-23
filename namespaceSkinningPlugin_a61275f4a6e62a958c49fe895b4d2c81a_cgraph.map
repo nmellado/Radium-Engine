@@ -1,0 +1,5 @@
+<map id="SkinningPlugin::findDuplicates" name="SkinningPlugin::findDuplicates">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#a6ef9dbd18c0501f2ffd1316be6be56ce" title="Access the vertices positions. " alt="" coords="265,5,436,47"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Utils_1_1Index.html#a771f93efd49538950e3cb9e57e46fbaf" title="Ra::Core::Utils::Index\l::Invalid" alt="" coords="273,71,428,112"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Utils_1_1Index.html#ab3ba134498a9c2f1f3f9ccadd984a8e8" title="CONSTRUCTOR Default constructor that allow implicit conversion from integer to Index. " alt="" coords="484,71,639,112"/>
+</map>

@@ -1,0 +1,30 @@
+<map id="/home/travis/build/STORM&#45;IRIT/Radium&#45;Engine/src/GuiBase/Viewer/Gizmo/GizmoManager.cpp" name="/home/travis/build/STORM&#45;IRIT/Radium&#45;Engine/src/GuiBase/Viewer/Gizmo/GizmoManager.cpp">
+<area shape="rect" id="node2" href="$OpenGL_8hpp.html" title="Engine/Renderer/OpenGL\l/OpenGL.hpp" alt="" coords="183,124,364,165"/>
+<area shape="rect" id="node5" href="$CameraInterface_8hpp.html" title="GuiBase/Viewer/CameraInterface.hpp" alt="" coords="377,221,637,247"/>
+<area shape="rect" id="node26" href="$GizmoManager_8hpp.html" title="GuiBase/Viewer/Gizmo\l/GizmoManager.hpp" alt="" coords="1041,124,1207,165"/>
+<area shape="rect" id="node37" href="$RotateGizmo_8hpp.html" title="GuiBase/Viewer/Gizmo\l/RotateGizmo.hpp" alt="" coords="1815,124,1982,165"/>
+<area shape="rect" id="node38" href="$ScaleGizmo_8hpp.html" title="GuiBase/Viewer/Gizmo\l/ScaleGizmo.hpp" alt="" coords="2006,124,2173,165"/>
+<area shape="rect" id="node39" href="$TranslateGizmo_8hpp.html" title="GuiBase/Viewer/Gizmo\l/TranslateGizmo.hpp" alt="" coords="1625,124,1791,165"/>
+<area shape="rect" id="node40" href="$SystemDisplay_8hpp.html" title="Engine/Managers/SystemDisplay\l/SystemDisplay.hpp" alt="" coords="2414,213,2645,255"/>
+<area shape="rect" id="node44" href="$Camera_8hpp.html" title="Engine/Renderer/Camera\l/Camera.hpp" alt="" coords="1371,124,1552,165"/>
+<area shape="rect" id="node47" href="$KeyMappingManager_8hpp.html" title="GuiBase/Utils/KeyMapping\lManager.hpp" alt="" coords="2889,213,3076,255"/>
+<area shape="rect" id="node6" href="$RaGuiBase_8hpp.html" title="GuiBase/RaGuiBase.hpp" alt="" coords="772,310,948,337"/>
+<area shape="rect" id="node7" href="$CoreMacros_8hpp.html" title="Core/CoreMacros.hpp" alt="" coords="911,541,1071,568"/>
+<area shape="rect" id="node17" href="$Types_8hpp.html" title="Core/Math/Types.hpp" alt="" coords="1068,392,1223,419"/>
+<area shape="rect" id="node22" href="$Log_8hpp.html" title="Core/Utils/Log.hpp" alt="" coords="109,310,248,337"/>
+<area shape="rect" id="node18" href="$RaCore_8hpp.html" title="Core/RaCore.hpp" alt="" coords="925,467,1056,493"/>
+<area shape="rect" id="node27" href="$TransformEditor_8hpp.html" title="GuiBase/TransformEditor\l/TransformEditor.hpp" alt="" coords="972,213,1151,255"/>
+<area shape="rect" id="node32" href="$Gizmo_8hpp.html" title="GuiBase/Viewer/Gizmo\l/Gizmo.hpp" alt="" coords="2006,213,2173,255"/>
+<area shape="rect" id="node28" href="$ItemEntry_8hpp.html" title="Engine/ItemModel/ItemEntry.hpp" alt="" coords="1871,310,2099,337"/>
+<area shape="rect" id="node29" href="$RaEngine_8hpp.html" title="Engine/RaEngine.hpp" alt="" coords="1974,392,2130,419"/>
+<area shape="rect" id="node30" href="$Index_8hpp.html" title="Core/Utils/Index.hpp" alt="" coords="2311,392,2462,419"/>
+<area shape="rect" id="node33" href="$Component_8hpp.html" title="Engine/Component/Component.hpp" alt="" coords="2567,310,2817,337"/>
+<area shape="rect" id="node34" href="$RadiumEngine_8hpp.html" title="Engine/RadiumEngine.hpp" alt="" coords="1659,310,1847,337"/>
+<area shape="rect" id="node36" href="$RenderObject_8hpp.html" title="Engine/Renderer/RenderObject\l/RenderObject.hpp" alt="" coords="1421,303,1635,344"/>
+<area shape="rect" id="node35" href="$Singleton_8hpp.html" title="Core/Utils/Singleton.hpp" alt="" coords="2588,392,2764,419"/>
+<area shape="rect" id="node41" href="$Color_8hpp.html" title="Core/Utils/Color.hpp" alt="" coords="2789,392,2937,419"/>
+<area shape="rect" id="node42" href="$Entity_8hpp.html" title="Engine/Entity/Entity.hpp" alt="" coords="1225,310,1396,337"/>
+<area shape="rect" id="node43" href="$DrawPrimitives_8hpp.html" title="Engine/Renderer/RenderObject\l/Primitives/DrawPrimitives.hpp" alt="" coords="2226,303,2441,344"/>
+<area shape="rect" id="node45" href="$Math_8hpp.html" title="Core/Math/Math.hpp" alt="" coords="796,221,948,247"/>
+<area shape="rect" id="node46" href="$Camera_8inl.html" title="Engine/Renderer/Camera\l/Camera.inl" alt="" coords="1371,213,1552,255"/>
+</map>

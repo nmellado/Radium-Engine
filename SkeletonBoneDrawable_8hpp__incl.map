@@ -1,0 +1,36 @@
+<map id="/home/travis/build/STORM&#45;IRIT/Radium&#45;Engine/Plugins/Animation/src/Drawing/SkeletonBoneDrawable.hpp" name="/home/travis/build/STORM&#45;IRIT/Radium&#45;Engine/Plugins/Animation/src/Drawing/SkeletonBoneDrawable.hpp">
+<area shape="rect" id="node2" href="$Skeleton_8hpp.html" title="Core/Animation/Skeleton.hpp" alt="" coords="682,206,891,233"/>
+<area shape="rect" id="node19" href="$Entity_8hpp.html" title="Engine/Entity/Entity.hpp" alt="" coords="2304,385,2475,411"/>
+<area shape="rect" id="node26" href="$Mesh_8hpp.html" title="Engine/Renderer/Mesh\l/Mesh.hpp" alt="" coords="2147,199,2311,240"/>
+<area shape="rect" id="node32" href="$RenderObject_8hpp.html" title="Engine/Renderer/RenderObject\l/RenderObject.hpp" alt="" coords="2651,288,2866,329"/>
+<area shape="rect" id="node35" href="$RenderTechnique_8hpp.html" title="Engine/Renderer/RenderTechnique\l/RenderTechnique.hpp" alt="" coords="2941,377,3179,419"/>
+<area shape="rect" id="node38" href="$AnimationComponent_8hpp.html" title="AnimationComponent.hpp" alt="" coords="1665,124,1855,151"/>
+<area shape="rect" id="node45" href="$AnimationPlugin_8hpp.html" title="AnimationPlugin.hpp" alt="" coords="3841,295,3994,322"/>
+<area shape="rect" id="node3" href="$Handle_8hpp.html" title="Core/Animation/Handle.hpp" alt="" coords="518,295,717,322"/>
+<area shape="rect" id="node16" href="$AdjacencyList_8hpp.html" title="Core/Containers/Adjacency\lList.hpp" alt="" coords="93,288,288,329"/>
+<area shape="rect" id="node4" href="$Pose_8hpp.html" title="Core/Animation/Pose.hpp" alt="" coords="1136,385,1320,411"/>
+<area shape="rect" id="node6" href="$RaCore_8hpp.html" title="Core/RaCore.hpp" alt="" coords="1265,556,1396,583"/>
+<area shape="rect" id="node11" href="$Types_8hpp.html" title="Core/Math/Types.hpp" alt="" coords="677,474,832,501"/>
+<area shape="rect" id="node15" href="$Handle_8inl.html" title="Core/Animation/Handle.inl" alt="" coords="363,385,551,411"/>
+<area shape="rect" id="node5" href="$AlignedStdVector_8hpp.html" title="Core/Containers/AlignedStd\lVector.hpp" alt="" coords="1231,467,1430,508"/>
+<area shape="rect" id="node7" href="$CoreMacros_8hpp.html" title="Core/CoreMacros.hpp" alt="" coords="2668,631,2828,657"/>
+<area shape="rect" id="node17" href="$VectorArray_8hpp.html" title="Core/Containers/VectorArray.hpp" alt="" coords="830,385,1061,411"/>
+<area shape="rect" id="node18" href="$AdjacencyList_8inl.html" title="Core/Containers/Adjacency\lList.inl" alt="" coords="93,377,288,419"/>
+<area shape="rect" id="node20" href="$RaEngine_8hpp.html" title="Engine/RaEngine.hpp" alt="" coords="2670,556,2826,583"/>
+<area shape="rect" id="node23" href="$IndexedObject_8hpp.html" title="Core/Utils/IndexedObject.hpp" alt="" coords="1681,474,1887,501"/>
+<area shape="rect" id="node25" href="$Entity_8inl.html" title="Engine/Entity/Entity.inl" alt="" coords="2309,474,2470,501"/>
+<area shape="rect" id="node24" href="$Index_8hpp.html" title="Core/Utils/Index.hpp" alt="" coords="1565,556,1715,583"/>
+<area shape="rect" id="node29" href="$TriangleMesh_8hpp.html" title="Core/Geometry/TriangleMesh.hpp" alt="" coords="769,295,1004,322"/>
+<area shape="rect" id="node30" href="$Color_8hpp.html" title="Core/Utils/Color.hpp" alt="" coords="403,474,551,501"/>
+<area shape="rect" id="node31" href="$Mesh_8inl.html" title="Engine/Renderer/Mesh\l/Mesh.inl" alt="" coords="2207,288,2371,329"/>
+<area shape="rect" id="node34" href="$RenderObjectTypes_8hpp.html" title="Engine/Renderer/RenderObject\l/RenderObjectTypes.hpp" alt="" coords="2651,377,2866,419"/>
+<area shape="rect" id="node36" href="$ShaderConfiguration_8hpp.html" title="Engine/Renderer/RenderTechnique\l/ShaderConfiguration.hpp" alt="" coords="2887,467,3124,508"/>
+<area shape="rect" id="node39" href="$AnimationPluginMacros_8hpp.html" title="AnimationPluginMacros.hpp" alt="" coords="3646,385,3845,411"/>
+<area shape="rect" id="node40" href="$Animation_8hpp.html" title="Core/Animation/Animation.hpp" alt="" coords="1553,295,1772,322"/>
+<area shape="rect" id="node41" href="$HandleWeight_8hpp.html" title="Core/Animation/HandleWeight.hpp" alt="" coords="1395,385,1635,411"/>
+<area shape="rect" id="node42" href="$AnimationData_8hpp.html" title="Core/Asset/AnimationData.hpp" alt="" coords="1911,474,2131,501"/>
+<area shape="rect" id="node43" href="$HandleData_8hpp.html" title="Core/Asset/HandleData.hpp" alt="" coords="1709,385,1909,411"/>
+<area shape="rect" id="node44" href="$Component_8hpp.html" title="Engine/Component/Component.hpp" alt="" coords="907,474,1157,501"/>
+<area shape="rect" id="node46" href="$RadiumPluginInterface_8hpp.html" title="PluginBase/RadiumPluginInterface.hpp" alt="" coords="3355,385,3621,411"/>
+<area shape="rect" id="node50" href="$AnimationUI_8h.html" title="UI/AnimationUI.h" alt="" coords="4113,385,4242,411"/>
+</map>

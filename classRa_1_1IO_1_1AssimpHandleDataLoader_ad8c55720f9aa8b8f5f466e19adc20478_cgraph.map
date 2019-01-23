@@ -1,0 +1,5 @@
+<map id="Ra::IO::AssimpHandleDataLoader::fetchVertexSize" name="Ra::IO::AssimpHandleDataLoader::fetchVertexSize">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a06a80ef7e42fd860557b93a1d035d283" title="DATA. " alt="" coords="244,5,448,47"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a525f0de4efbe0ba6818f592d80c8f321" title="Ra::Core::Asset::HandleData\l::getComponent" alt="" coords="244,71,448,112"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#afbeb8b2911a5cdf62d976d6ce833954d" title="Ra::Core::Asset::HandleData\l::setVertexSize" alt="" coords="244,136,448,177"/>
+</map>

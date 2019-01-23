@@ -1,0 +1,10 @@
+<map id="SkinningPlugin::SkinningComponent::endSkinning" name="SkinningPlugin::SkinningComponent::endSkinning">
+<area shape="rect" id="node2" href="$namespaceSkinningPlugin.html#a010dccff0e8dce4bd2dd6c633bbeec63" title="SkinningPlugin::uniformNormal" alt="" coords="236,35,455,61"/>
+<area shape="rect" id="node6" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#a6ef9dbd18c0501f2ffd1316be6be56ce" title="Access the vertices positions. " alt="" coords="260,86,431,127"/>
+<area shape="rect" id="node7" href="$classRa_1_1Core_1_1Geometry_1_1TriangleMesh.html#ad7d3f6272b902171740e50232ba56114" title="Access the vertices normals. " alt="" coords="259,151,431,193"/>
+<area shape="rect" id="node8" href="$namespaceRa_1_1Core_1_1Animation.html#a03d7eb179bf339237a3e5b06d6d06100" title="Ra::Core::Animation\l::relativePose" alt="" coords="271,217,420,258"/>
+<area shape="rect" id="node3" href="$namespaceRa_1_1Core_1_1Geometry.html#aa04e6052d8911b1df1bd881474debb45" title="Ra::Core::Geometry::t" alt="" coords="503,5,663,32"/>
+<area shape="rect" id="node4" href="$namespaceRa_1_1Core_1_1Geometry.html#a2ce97206423345716bf1b55f60c1c227" title="Ra::Core::Geometry\l::triangleNormal" alt="" coords="509,57,657,98"/>
+<area shape="rect" id="node5" href="$namespaceOpenMesh.html#a71e7f1dd3eac016d2b8245ac408a291c" title="OpenMesh::cross" alt="" coords="711,64,843,91"/>
+<area shape="rect" id="node9" href="$namespaceRa_1_1Core_1_1Animation.html#a44a3a0320649edf2829268bf80555800" title="Ra::Core::Animation\l::compatible" alt="" coords="508,217,657,258"/>
+</map>

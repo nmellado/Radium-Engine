@@ -1,0 +1,9 @@
+<map id="AnimationPlugin::AnimationComponent::handleSkeletonLoading" name="AnimationPlugin::AnimationComponent::handleSkeletonLoading">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Asset_1_1AssetData.html#a3f4a6e18b60f2de4a23c8898a7341d21" title="Acces to the name of the asset. " alt="" coords="323,5,518,47"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1Animation_1_1Handle.html#ae8dab79a9d571d2a876ec9aaeb36959c" title="Set the Handle&#39;s name. " alt="" coords="346,71,495,112"/>
+<area shape="rect" id="node4" href="$namespaceRa_1_1Core_1_1Asset.html#a9a7ca6c7d138ab84b45f99aead35ff78" title="Create a skeleton from a Handle Data extracted from a file Outputs the skeleton and a map from the co..." alt="" coords="308,137,533,163"/>
+<area shape="rect" id="node8" href="$classRa_1_1Core_1_1Animation_1_1Skeleton.html#acb6381c3f288f580800589eb718c1759" title="Ra::Core::Animation\l::Skeleton::getPose" alt="" coords="346,188,495,229"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a06a80ef7e42fd860557b93a1d035d283" title="DATA. " alt="" coords="581,64,785,105"/>
+<area shape="rect" id="node6" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a456d73d7b367dbf29f03d037bedaeaba" title="Ra::Core::Asset::HandleData\l::getComponentData" alt="" coords="581,129,785,171"/>
+<area shape="rect" id="node7" href="$classRa_1_1Core_1_1Asset_1_1HandleData.html#a2ce8dde1d1d3848bcc76693a40e389de" title="Ra::Core::Asset::HandleData\l::getEdgeData" alt="" coords="581,195,785,236"/>
+</map>

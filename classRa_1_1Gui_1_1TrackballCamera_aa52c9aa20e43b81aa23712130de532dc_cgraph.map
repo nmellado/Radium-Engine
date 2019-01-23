@@ -1,0 +1,12 @@
+<map id="Ra::Gui::TrackballCamera::setCameraPosition" name="Ra::Gui::TrackballCamera::setCameraPosition">
+<area shape="rect" id="node2" href="$classRa_1_1Engine_1_1Camera.html#ab8f9fdfba7355b4589c4d9cb39f0b527" title="Set the position of the camera to &#39;position&#39;. " alt="" coords="233,239,381,280"/>
+<area shape="rect" id="node4" href="$classRa_1_1Engine_1_1Camera.html#a724a052e94817af7e602129467c8696f" title="Return the position. " alt="" coords="680,64,828,105"/>
+<area shape="rect" id="node6" href="$classRa_1_1Engine_1_1Camera.html#a2fd3ed37be68acb358df23c3f04b3d81" title="Set the direction of the camera to &#39;direction&#39;. " alt="" coords="233,173,381,215"/>
+<area shape="rect" id="node7" href="$classRa_1_1Engine_1_1Camera.html#a23be7aa714c0e9c2a9429dfc9ef2c53a" title="Return the direction the camera is looking at. " alt="" coords="448,123,596,164"/>
+<area shape="rect" id="node8" href="$classRa_1_1Gui_1_1TrackballCamera.html#a1f4216d79cee852ec5653a1a11fe4155" title="Update the polar coordinates of the Camera w.r.t. the trackball center. " alt="" coords="432,5,612,47"/>
+<area shape="rect" id="node9" href="$classRa_1_1Engine_1_1Light.html#a1bf2c510e62b2a99f0012a39ad218378" title="Set the position of the light source. " alt="" coords="239,304,375,345"/>
+<area shape="rect" id="node11" href="$classRa_1_1Engine_1_1Light.html#a24e11b300dfe4e2a785d87b6de74b036" title="set the direction of lighting " alt="" coords="239,369,375,411"/>
+<area shape="rect" id="node3" href="$classRa_1_1Engine_1_1Camera.html#a7a2c1c84e3063c6c3f09d490477abb0f" title="Apply the local transformation &#39;T&#39; to the camera. " alt="" coords="448,188,596,229"/>
+<area shape="rect" id="node5" href="$classRa_1_1Engine_1_1RenderObject.html#a2d6a1bc2b7646fe0912035a2ece24864" title="Ra::Engine::RenderObject\l::setLocalTransform" alt="" coords="663,188,845,229"/>
+<area shape="rect" id="node10" href="$classRa_1_1Core_1_1Utils_1_1ColorBase.html#a467dad42627c64495356c4fd21b3ac81" title="Ra::Core::Utils::ColorBase\l\&lt; Scalar \&gt;::White" alt="" coords="429,304,615,345"/>
+</map>

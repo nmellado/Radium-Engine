@@ -1,0 +1,6 @@
+<map id="Ra::Core::Geometry::LoopSubdivider::prepare" name="Ra::Core::Geometry::LoopSubdivider::prepare">
+<area shape="rect" id="node2" href="$classRa_1_1Core_1_1Geometry_1_1LoopSubdivider.html#add8c5d70fca386c6ca8d57b6ba14c756" title="Pre&#45;compute weights. " alt="" coords="261,16,415,72"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1Geometry_1_1TopologicalMesh.html#a1c87413e2fca885e3317008c3b122847" title="Return the half&#45;edge associated with a given vertex and face. " alt="" coords="240,96,436,152"/>
+<area shape="rect" id="node3" href="$namespaceRa_1_1Core_1_1Geometry.html#aa04e6052d8911b1df1bd881474debb45" title="Ra::Core::Geometry::t" alt="" coords="484,5,644,32"/>
+<area shape="rect" id="node4" href="$namespaceRa_1_1Core_1_1Vector.html#a42d87f3bd0658bac532d72f0ec528827" title="Get the cosine of the angle between two vectors. " alt="" coords="487,56,641,83"/>
+</map>
