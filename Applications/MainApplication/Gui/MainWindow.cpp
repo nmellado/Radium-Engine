@@ -528,7 +528,7 @@ void MainWindow::exportCurrentMesh() {
         Ra::IO::OBJFileManager obj;
         auto ro = Engine::RadiumEngine::getInstance()->getRenderObjectManager()->getRenderObject(
             e.m_roIndex );
-        Ra::Core::Geometry::TriangleMesh mesh = ro->getMesh()->getGeometry();
+        Ra::Core::Geometry::TriangleMesh mesh = ro->getMesh()->getTriangleMesh();
         bool result = obj.save( filename, mesh );
         if ( result )
         {
