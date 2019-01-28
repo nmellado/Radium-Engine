@@ -4,6 +4,7 @@
 
 #include <Core/Asset/FileData.hpp>
 #include <Core/Asset/GeometryData.hpp>
+#include <Core/Asset/VolumeData.hpp>
 #include <Core/Containers/MakeShared.hpp>
 #include <Core/Geometry/Normal.hpp>
 #include <Core/Utils/Color.hpp>
@@ -11,11 +12,13 @@
 #include <Engine/Managers/ComponentMessenger/ComponentMessenger.hpp>
 #include <Engine/Renderer/RenderObject/RenderObjectManager.hpp>
 
+#include <Engine/Renderer/Displayable/VolumeObject.hpp>
 #include <Engine/Renderer/Mesh/Mesh.hpp>
 
 #include <Engine/Renderer/Material/BlinnPhongMaterial.hpp>
 #include <Engine/Renderer/Material/Material.hpp>
 #include <Engine/Renderer/Material/MaterialConverters.hpp>
+#include <Engine/Renderer/Material/RayMarchingMaterial.hpp>
 
 #include <Engine/Renderer/RenderObject/Primitives/DrawPrimitives.hpp>
 #include <Engine/Renderer/RenderObject/RenderObject.hpp>
@@ -30,27 +33,21 @@ using TriangleArray = Ra::Core::VectorArray<Ra::Core::Vector3ui>;
 
 namespace Ra {
 namespace Engine {
-GeometryComponent::GeometryComponent( const std::string& name, bool deformable, Entity* entity ) :
+TriangleMeshComponent::TriangleMeshComponent( const std::string& name, Entity* entity,
+                                              const Ra::Core::Asset::GeometryData* data ) :
     Component( name, entity ),
-    m_deformable{deformable} {}
-
-GeometryComponent::~GeometryComponent() = default;
-
-void GeometryComponent::initialize() {}
-
-void GeometryComponent::addMeshRenderObject( const Ra::Core::Geometry::TriangleMesh& mesh,
-                                             const std::string& name ) {
-    setupIO( name );
-
-    std::shared_ptr<Mesh> displayMesh( new Mesh( name ) );
-    displayMesh->loadGeometry( mesh );
-
-    auto renderObject =
-        RenderObject::createRenderObject( name, this, RenderObjectType::Geometry, displayMesh );
-    m_meshIndex = addRenderObject( renderObject );
+    _displayMesh( nullptr ) {
+    generateTriangleMesh( data );
 }
 
-void GeometryComponent::handleMeshLoading( const Ra::Core::Asset::GeometryData* data ) {
+//////////// STORE Mesh/TriangleMesh here instead of an index, so don't need to request the ROMgr
+/// and no problem with the Displayable -> doesn't affect the API
+
+TriangleMeshComponent::~TriangleMeshComponent() = default;
+
+void TriangleMeshComponent::initialize() {}
+
+void TriangleMeshComponent::generateTriangleMesh( const Ra::Core::Asset::GeometryData* data ) {
     std::string name( m_name );
     name.append( "_" + data->getName() );
 
@@ -65,7 +62,7 @@ void GeometryComponent::handleMeshLoading( const Ra::Core::Asset::GeometryData* 
 
     m_contentName = data->getName();
 
-    auto displayMesh = Ra::Core::make_shared<Mesh>( meshName /*, Mesh::RM_POINTS*/ );
+    _displayMesh = Ra::Core::make_shared<Mesh>( meshName );
 
     Ra::Core::Geometry::TriangleMesh mesh;
     const auto T = data->getFrame();
@@ -97,26 +94,26 @@ void GeometryComponent::handleMeshLoading( const Ra::Core::Asset::GeometryData* 
         mesh.m_triangles[i] = faces[i].head<3>();
     }
 
-    displayMesh->loadGeometry( mesh );
+    _displayMesh->loadGeometry( std::move( mesh ) );
 
     if ( data->hasTangents() )
     {
-        displayMesh->addData( Mesh::VERTEX_TANGENT, data->getTangents() );
+        _displayMesh->addData( Mesh::VERTEX_TANGENT, data->getTangents() );
     }
 
     if ( data->hasBiTangents() )
     {
-        displayMesh->addData( Mesh::VERTEX_BITANGENT, data->getBiTangents() );
+        _displayMesh->addData( Mesh::VERTEX_BITANGENT, data->getBiTangents() );
     }
 
     if ( data->hasTextureCoordinates() )
     {
-        displayMesh->addData( Mesh::VERTEX_TEXCOORD, data->getTexCoords() );
+        _displayMesh->addData( Mesh::VERTEX_TEXCOORD, data->getTexCoords() );
     }
 
     if ( data->hasColors() )
     {
-        displayMesh->addData( Mesh::VERTEX_COLOR, data->getColors() );
+        _displayMesh->addData( Mesh::VERTEX_COLOR, data->getColors() );
     }
 
     // To be discussed: Should not weights be part of the geometry ?
@@ -126,6 +123,7 @@ void GeometryComponent::handleMeshLoading( const Ra::Core::Asset::GeometryData* 
     RenderTechnique rt;
 
     bool isTransparent{false};
+
     if ( data->hasMaterial() )
     {
         const Ra::Core::Asset::MaterialData& loadedMaterial = data->getMaterial();
@@ -151,119 +149,233 @@ void GeometryComponent::handleMeshLoading( const Ra::Core::Asset::GeometryData* 
             Ra::Core::make_shared<BlinnPhongMaterial>( data->getName() + "_DefaultBPMaterial" );
         mat->m_kd = Ra::Core::Utils::Color::Grey();
         mat->m_ks = Ra::Core::Utils::Color::White();
+        mat->m_hasPerVertexKd = data->hasColors();
+        mat->m_renderAsSplat = faces.empty();
         rt.setMaterial( mat );
         auto builder = EngineRenderTechniques::getDefaultTechnique( "BlinnPhong" );
         builder.second( rt, isTransparent );
     }
 
+    if ( faces.empty() ) // add geometry shader for splatting
+    {
+        auto addGeomShader = [&rt]( RenderTechnique::PassName pass ) {
+            if ( rt.hasConfiguration( pass ) )
+            {
+                ShaderConfiguration config = rt.getConfiguration( pass );
+                config.addShader( ShaderType_GEOMETRY, "Shaders/PointCloud.geom.glsl" );
+                rt.setConfiguration( config, pass );
+            }
+        };
+
+        addGeomShader( RenderTechnique::LIGHTING_OPAQUE );
+        addGeomShader( RenderTechnique::LIGHTING_TRANSPARENT );
+        addGeomShader( RenderTechnique::Z_PREPASS );
+    }
+
     auto ro = RenderObject::createRenderObject( roName, this, RenderObjectType::Geometry,
-                                                displayMesh, rt );
+                                                _displayMesh, rt );
     ro->setTransparent( isTransparent );
 
     setupIO( m_contentName );
     m_meshIndex = addRenderObject( ro );
 }
 
-Ra::Core::Utils::Index GeometryComponent::getRenderObjectIndex() const {
+Ra::Core::Utils::Index TriangleMeshComponent::getRenderObjectIndex() const {
+    CORE_ASSERT( _displayMesh != nullptr, "DisplayMesh should exist while component is alive" );
     return m_meshIndex;
 }
 
-const Ra::Core::Geometry::TriangleMesh& GeometryComponent::getMesh() const {
-    return getDisplayMesh().getGeometry();
+const Ra::Core::Geometry::TriangleMesh& TriangleMeshComponent::getMesh() const {
+    CORE_ASSERT( _displayMesh != nullptr, "DisplayMesh should exist while component is alive" );
+    return _displayMesh->getTriangleMesh();
 }
 
-void GeometryComponent::setDeformable( bool b ) {
-    this->m_deformable = b;
+Mesh* TriangleMeshComponent::getDisplayMesh() {
+    CORE_ASSERT( _displayMesh != nullptr, "DisplayMesh should exist while component is alive" );
+    return _displayMesh.get();
 }
 
-void GeometryComponent::setContentName( const std::string& name ) {
+void TriangleMeshComponent::setContentName( const std::string& name ) {
     this->m_contentName = name;
 }
 
-void GeometryComponent::setupIO( const std::string& id ) {
+void TriangleMeshComponent::setupIO( const std::string& id ) {
+    CORE_ASSERT( _displayMesh != nullptr, "DisplayMesh should exist while component is alive" );
     ComponentMessenger::CallbackTypes<Ra::Core::Geometry::TriangleMesh>::Getter cbOut =
-        std::bind( &GeometryComponent::getMeshOutput, this );
+        std::bind( &TriangleMeshComponent::getMeshOutput, this );
     ComponentMessenger::getInstance()->registerOutput<Ra::Core::Geometry::TriangleMesh>(
         getEntity(), this, id, cbOut );
 
     ComponentMessenger::CallbackTypes<Ra::Core::Geometry::TriangleMesh>::ReadWrite cbRw =
-        std::bind( &GeometryComponent::getMeshRw, this );
+        std::bind( &TriangleMeshComponent::getMeshRw, this );
     ComponentMessenger::getInstance()->registerReadWrite<Ra::Core::Geometry::TriangleMesh>(
         getEntity(), this, id, cbRw );
 
     ComponentMessenger::CallbackTypes<Ra::Core::Utils::Index>::Getter roOut =
-        std::bind( &GeometryComponent::roIndexRead, this );
+        std::bind( &TriangleMeshComponent::roIndexRead, this );
     ComponentMessenger::getInstance()->registerOutput<Ra::Core::Utils::Index>( getEntity(), this,
                                                                                id, roOut );
 
     ComponentMessenger::CallbackTypes<Ra::Core::Vector3Array>::ReadWrite vRW =
-        std::bind( &GeometryComponent::getVerticesRw, this );
+        std::bind( &TriangleMeshComponent::getVerticesRw, this );
     ComponentMessenger::getInstance()->registerReadWrite<Ra::Core::Vector3Array>( getEntity(), this,
                                                                                   id + "v", vRW );
 
     ComponentMessenger::CallbackTypes<Ra::Core::Vector3Array>::ReadWrite nRW =
-        std::bind( &GeometryComponent::getNormalsRw, this );
+        std::bind( &TriangleMeshComponent::getNormalsRw, this );
     ComponentMessenger::getInstance()->registerReadWrite<Ra::Core::Vector3Array>( getEntity(), this,
                                                                                   id + "n", nRW );
 
     ComponentMessenger::CallbackTypes<TriangleArray>::ReadWrite tRW =
-        std::bind( &GeometryComponent::getTrianglesRw, this );
+        std::bind( &TriangleMeshComponent::getTrianglesRw, this );
     ComponentMessenger::getInstance()->registerReadWrite<TriangleArray>( getEntity(), this,
                                                                          id + "t", tRW );
-
-    if ( m_deformable )
-    {
-        ComponentMessenger::CallbackTypes<Ra::Core::Geometry::TriangleMesh>::Setter cbIn =
-            std::bind( &GeometryComponent::setMeshInput, this, std::placeholders::_1 );
-        ComponentMessenger::getInstance()->registerInput<Ra::Core::Geometry::TriangleMesh>(
-            getEntity(), this, id, cbIn );
-    }
 }
 
-const Mesh& GeometryComponent::getDisplayMesh() const {
-    return *( getRoMgr()->getRenderObject( getRenderObjectIndex() )->getMesh() );
+const Ra::Core::Geometry::TriangleMesh* TriangleMeshComponent::getMeshOutput() const {
+    return &_displayMesh->getTriangleMesh();
 }
 
-Mesh& GeometryComponent::getDisplayMesh() {
-    return *( getRoMgr()->getRenderObject( getRenderObjectIndex() )->getMesh() );
+Ra::Core::Geometry::TriangleMesh* TriangleMeshComponent::getMeshRw() {
+    CORE_ASSERT( _displayMesh != nullptr, "DisplayMesh should exist while component is alive" );
+    _displayMesh->setDirty( Mesh::VERTEX_POSITION );
+    _displayMesh->setDirty( Mesh::VERTEX_NORMAL );
+    _displayMesh->setDirty( Mesh::INDEX );
+    _displayMesh->setDirty( Mesh::VERTEX_TANGENT, true );
+    _displayMesh->setDirty( Mesh::VERTEX_BITANGENT, true );
+    _displayMesh->setDirty( Mesh::VERTEX_TEXCOORD, true );
+    _displayMesh->setDirty( Mesh::VERTEX_COLOR, true );
+    _displayMesh->setDirty( Mesh::VERTEX_WEIGHTS, true );
+    _displayMesh->setDirty( Mesh::VERTEX_WEIGHT_IDX, true );
+    return &( _displayMesh->getTriangleMesh() );
 }
 
-const Ra::Core::Geometry::TriangleMesh* GeometryComponent::getMeshOutput() const {
-    return &( getMesh() );
+Ra::Core::Geometry::TriangleMesh::PointAttribHandle::Container*
+TriangleMeshComponent::getVerticesRw() {
+    CORE_ASSERT( _displayMesh != nullptr, "DisplayMesh should exist while component is alive" );
+    _displayMesh->setDirty( Mesh::VERTEX_POSITION );
+    return &( _displayMesh->getTriangleMesh().vertices() );
 }
 
-Ra::Core::Geometry::TriangleMesh* GeometryComponent::getMeshRw() {
-    getDisplayMesh().setDirty( Mesh::VERTEX_POSITION );
-    getDisplayMesh().setDirty( Mesh::VERTEX_NORMAL );
-    getDisplayMesh().setDirty( Mesh::INDEX );
-    return &( getDisplayMesh().getGeometry() );
+Ra::Core::Geometry::TriangleMesh::NormalAttribHandle::Container*
+TriangleMeshComponent::getNormalsRw() {
+    CORE_ASSERT( _displayMesh != nullptr, "DisplayMesh should exist while component is alive" );
+    _displayMesh->setDirty( Mesh::VERTEX_NORMAL );
+    return &( _displayMesh->getTriangleMesh().normals() );
 }
 
-void GeometryComponent::setMeshInput( const Core::Geometry::TriangleMesh* meshptr ) {
-    CORE_ASSERT( meshptr, " Input is null" );
-    CORE_ASSERT( m_deformable, "Mesh is not deformable" );
-
-    Mesh& displayMesh = getDisplayMesh();
-    displayMesh.loadGeometry( *meshptr );
+Ra::Core::VectorArray<Ra::Core::Vector3ui>* TriangleMeshComponent::getTrianglesRw() {
+    CORE_ASSERT( _displayMesh != nullptr, "DisplayMesh should exist while component is alive" );
+    _displayMesh->setDirty( Mesh::INDEX );
+    return &( _displayMesh->getTriangleMesh().m_triangles );
 }
 
-Ra::Core::Geometry::TriangleMesh::PointAttribHandle::Container* GeometryComponent::getVerticesRw() {
-    getDisplayMesh().setDirty( Mesh::VERTEX_POSITION );
-    return &( getDisplayMesh().getGeometry().vertices() );
-}
-
-Ra::Core::Geometry::TriangleMesh::NormalAttribHandle::Container* GeometryComponent::getNormalsRw() {
-    getDisplayMesh().setDirty( Mesh::VERTEX_NORMAL );
-    return &( getDisplayMesh().getGeometry().normals() );
-}
-
-Ra::Core::VectorArray<Ra::Core::Vector3ui>* GeometryComponent::getTrianglesRw() {
-    getDisplayMesh().setDirty( Mesh::INDEX );
-    return &( getDisplayMesh().getGeometry().m_triangles );
-}
-
-const Ra::Core::Utils::Index* GeometryComponent::roIndexRead() const {
+const Ra::Core::Utils::Index* TriangleMeshComponent::roIndexRead() const {
+    CORE_ASSERT( _displayMesh != nullptr, "DisplayMesh should exist while component is alive" );
     return &m_meshIndex;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////// Volume Component
+///////////////////////////////////
+
+VolumeComponent::VolumeComponent( const std::string& name, Entity* entity,
+                                  const Ra::Core::Asset::VolumeData* data ) :
+    Component( name, entity ),
+    _displayVolume( nullptr ) {
+    generateVolumeRender( data );
+}
+
+VolumeComponent::~VolumeComponent() = default;
+
+void VolumeComponent::initialize() {}
+
+void VolumeComponent::generateVolumeRender( const Ra::Core::Asset::VolumeData* data ) {
+    std::string name( m_name );
+    name.append( "_" + data->getName() );
+
+    std::string roName = name;
+
+    roName.append( "_RO" );
+    std::string meshName = name;
+    meshName.append( "_Mesh" );
+
+    std::string matName = name;
+    matName.append( "_Mat" );
+
+    m_contentName = name + "_DAT_" + data->getName();
+
+    _displayVolume = Ra::Core::make_shared<VolumeObject>( meshName );
+    _displayVolume->loadGeometry( data->volume );
+
+    // The technique for rendering this component
+    RenderTechnique rt;
+
+    auto mat = Ra::Core::make_shared<RayMarchingMaterial>( data->getName() + "_DefaultBPMaterial" );
+    mat->setTexture( const_cast<Texture*>( &( _displayVolume->getDataTexture() ) ) );
+    // compute uv coordinates normalization factor
+    {
+        Core::Vector3 s = _displayVolume->getVolume().computeAabb().sizes();
+        mat->m_uvNormalizationFactor = s / s.minCoeff();
+    }
+    rt.setMaterial( mat );
+    // Do not set the material transparent if it is not ... ask wether material is transparent.
+    bool isTransparent{mat->isTransparent()};
+    auto builder = EngineRenderTechniques::getDefaultTechnique( "RayMarching" );
+    builder.second( rt, isTransparent );
+
+    auto ro = RenderObject::createRenderObject( roName, this, RenderObjectType::Geometry,
+                                                _displayVolume, rt );
+    ro->setTransparent( isTransparent );
+
+    setupIO( m_contentName );
+    m_volumeIndex = addRenderObject( ro );
+}
+
+VolumeObject* VolumeComponent::getDisplayVolume() {
+    CORE_ASSERT( _displayVolume != nullptr, "DisplayMesh should exist while component is alive" );
+    return _displayVolume.get();
+}
+
+Ra::Core::Utils::Index VolumeComponent::getRenderObjectIndex() const {
+    CORE_ASSERT( _displayVolume != nullptr, "DisplayMesh should exist while component is alive" );
+    return m_volumeIndex;
+}
+
+void VolumeComponent::setContentName( const std::string& name ) {
+    this->m_contentName = name;
+}
+
+void VolumeComponent::setupIO( const std::string& id ) {
+    CORE_ASSERT( _displayVolume != nullptr, "DisplayMesh should exist while component is alive" );
+    ComponentMessenger::CallbackTypes<Ra::Core::Geometry::AbstractVolume>::Getter cbOut =
+        std::bind( &VolumeComponent::getVolumeOutput, this );
+    ComponentMessenger::getInstance()->registerOutput<Ra::Core::Geometry::AbstractVolume>(
+        getEntity(), this, id, cbOut );
+
+    ComponentMessenger::CallbackTypes<Ra::Core::Geometry::AbstractVolume>::ReadWrite cbRw =
+        std::bind( &VolumeComponent::getVolumeRw, this );
+    ComponentMessenger::getInstance()->registerReadWrite<Ra::Core::Geometry::AbstractVolume>(
+        getEntity(), this, id, cbRw );
+
+    ComponentMessenger::CallbackTypes<Ra::Core::Utils::Index>::Getter roOut =
+        std::bind( &VolumeComponent::roIndexRead, this );
+    ComponentMessenger::getInstance()->registerOutput<Ra::Core::Utils::Index>( getEntity(), this,
+                                                                               id, roOut );
+}
+
+const Ra::Core::Utils::Index* VolumeComponent::roIndexRead() const {
+    CORE_ASSERT( _displayVolume != nullptr, "DisplayMesh should exist while component is alive" );
+    return &m_volumeIndex;
+}
+
+const Ra::Core::Geometry::AbstractVolume* VolumeComponent::getVolumeOutput() const {
+    return &_displayVolume->getVolume();
+}
+
+Ra::Core::Geometry::AbstractVolume* VolumeComponent::getVolumeRw() {
+    return &_displayVolume->getVolume();
 }
 
 } // namespace Engine
