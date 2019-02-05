@@ -37,7 +37,7 @@ class RA_CORE_API AbstractVolume : public AbstractGeometry {
     };
 
     /// Type of value encoded in the volume
-    using ValueType = float;
+    using ValueType = Scalar;
 
   protected:
     AbstractVolume( const VolumeStorageType& type );
