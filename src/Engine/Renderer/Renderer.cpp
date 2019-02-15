@@ -579,7 +579,7 @@ std::unique_ptr<uchar[]> Renderer::grabFrame( size_t& w, size_t& h ) const {
     // Grab the texture data
     GL_ASSERT( glGetTexImage( GL_TEXTURE_2D, 0, GL_RGBA, GL_FLOAT, pixels.get() ) );
 
-    // Now we must convert the floats to RGB while flipping the image updisde down.
+    // Now we must convert the floats to RGBA while flipping the image updisde down.
     auto writtenPixels = std::unique_ptr<uchar[]>( new uchar[tex->width() * tex->height() * 4] );
     for ( uint j = 0; j < tex->height(); ++j )
     {
@@ -589,14 +589,26 @@ std::unique_ptr<uchar[]> Renderer::grabFrame( size_t& w, size_t& h ) const {
             auto ou = 4 * ( ( tex->height() - 1 - j ) * tex->width() +
                             i ); // Index in the final image (note the j flipping).
 
+            float r = pixels[in + 0];
+            float g = pixels[in + 1];
+            float b = pixels[in + 2];
+            float a = pixels[in + 3];
+            if (a!=0.0) {
+                r/=a;
+                g/=a;
+                b/=a;
+            } else {
+                r=g=b=0;
+            }
+
             writtenPixels[ou + 0] =
-                (uchar)std::clamp( Scalar( pixels[in + 0] * 255.f ), Scalar( 0 ), Scalar( 255 ) );
+                uchar(std::clamp( int(r*255) , 0, 255 ));
             writtenPixels[ou + 1] =
-                (uchar)std::clamp( Scalar( pixels[in + 1] * 255.f ), Scalar( 0 ), Scalar( 255 ) );
+                uchar(std::clamp( int(g*255) , 0, 255 ));
             writtenPixels[ou + 2] =
-                (uchar)std::clamp( Scalar( pixels[in + 2] * 255.f ), Scalar( 0 ), Scalar( 255 ) );
+                uchar(std::clamp( int(b*255) , 0, 255 ));
             writtenPixels[ou + 3] =
-                (uchar)std::clamp( Scalar( pixels[in + 3] * 255.f ), Scalar( 0 ), Scalar( 255 ) );
+                uchar(std::clamp( int(a*255) , 0, 255 ));
         }
     }
     w = tex->width();
