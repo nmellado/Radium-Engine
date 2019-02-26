@@ -282,10 +282,12 @@ void VolumeComponent::generateVolumeRender( const Ra::Core::Asset::VolumeData* d
     // The technique for rendering this component
     RenderTechnique rt;
 
-    bool isTransparent{true};
+
     auto mat = Ra::Core::make_shared<RayMarchingMaterial>( data->getName() + "_DefaultBPMaterial" );
     mat->setTexture( const_cast<Texture*>( &( _displayVolume->getDataTexture() ) ) );
     rt.setMaterial( mat );
+    // Do not set the material transparent if it is not ... ask wether material is transparent.
+    bool isTransparent{ mat->isTransparent() };
     auto builder = EngineRenderTechniques::getDefaultTechnique( "RayMarching" );
     builder.second( rt, isTransparent );
 

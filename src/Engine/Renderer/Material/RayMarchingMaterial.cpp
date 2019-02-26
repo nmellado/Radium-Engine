@@ -63,7 +63,8 @@ void RayMarchingMaterial::registerMaterial() {
             // compatible one Main pass (Mandatory) : RayMarching
             auto lightpassconfig =
                 Ra::Engine::ShaderConfigurationFactory::getConfiguration( "RayMarching" );
-            rt.setConfiguration( lightpassconfig, Ra::Engine::RenderTechnique::LIGHTING_OPAQUE );
+            //rt.setConfiguration( lightpassconfig, Ra::Engine::RenderTechnique::LIGHTING_OPAQUE );
+            rt.setConfiguration( lightpassconfig, Ra::Engine::RenderTechnique::Z_PREPASS );
 
             //            // Z prepass (Recommended) : DepthAmbiantPass
             //            auto zprepassconfig =
