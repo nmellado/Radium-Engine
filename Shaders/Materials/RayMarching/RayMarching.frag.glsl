@@ -30,8 +30,7 @@ void main(void) {
 	float value;
 	vec4 color;
 	vec4 frgColor = vec4(0.0);
-
-	float att=1.0;
+    bool hit = false;
 
 	// le rayon
 	vec3 raypos = in_texcoord;//in_position;
@@ -43,29 +42,24 @@ void main(void) {
     for(int i = 0;
         i<1000;
         i++) {
-        value = texture(material.buffer, raypos.xzy).r;
-        frgColor += vec4(value);
+        value = texture(material.buffer, raypos).r;
+        if ( value != 0. )
+        {
+            frgColor += vec4(value);
+            hit = true;
+        }
 
         raypos = raypos + raydir;
-        if ( any(greaterThan(raypos, vec3(1.0, 1.0, 1.0))) ||
-             any(lessThan(raypos, vec3(0.0, 0.0, 0.0)))
+        if ( any(greaterThan(raypos, vec3(1.0))) ||
+             any(lessThan(raypos, vec3(0.0))) ||
+             all(greaterThan(frgColor.xyz, vec3(1.0)))
            )
            break;
     }
 
-    if ( all( lessThan(vec3(fragColor), vec3(0.0)) ) )
-        discard;
+    if ( ! hit ) discard;
 
-//    if (value == 0) fragColor = vec4(position,1.);//vec4(1.0, 0., 0., 1.0);
-//    else fragColor = vec4(0.0, 0., 1., 1.0);
-
-
-    //if (att > 0.99) discard;
-//    frgColor.a = 1.0;
     fragColor = frgColor;
-//   fragColor = vec4(raydir.zzz, 1.0);
-//   fragColor = vec4(normalize(in_position), 1.0);
-//    fragColor = vec4(1.0, 0., 0., 1.0);
 
     out_normal = vec4(normalize(raydir), 1.0);
     out_diffuse = vec4(normalize(in_position), 1.0);
