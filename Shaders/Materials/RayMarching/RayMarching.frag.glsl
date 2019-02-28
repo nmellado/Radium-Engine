@@ -44,8 +44,8 @@ float weight(float z, float alpha) {
      //         increase if distant transparents are blending together too much.
      //     orderingStrength : Ordering strength. Increase if background is showing through foreground too much.
      // 1e-5 + ... : avoid dividing by zero !
-
-     return pow(alpha, 0.5) * clamp(10 / ( 1e-5 + pow(z/10, 6)  ), 1e-2, 3*1e3);
+//    z = 3;
+    return pow(alpha, 0.5) * clamp(10 / ( 1e-5 + pow(z/10, 6)  ), 1e-2, 3*1e3);
  }
 
 // source: https://github.com/kbinani/colormap-shaders/blob/master/shaders/glsl/MATLAB_jet.frag
@@ -77,6 +77,22 @@ vec4 colormap(float x) {
     float r = clamp(colormap_red(x), 0.0, 1.0);
     float g = clamp(colormap_green(x), 0.0, 1.0);
     float b = clamp(colormap_blue(x), 0.0, 1.0);
+    float d = x/10.;
+
+    vec3 c0 = vec3 (0., 0., 1.);
+    vec3 c1 = vec3 (0., 1., 0.);
+    vec3 c2 = vec3 (1., 1., 0.);
+    vec3 c3 = vec3 (1., 0., 0.);
+    vec3 c4 = vec3 (1., 1., 1.);
+    float s = .3;
+    float a0 = clamp(x/s, 0., 1.);
+    float a1 = clamp((x-s)/s, 0., 1.);
+    float a2 = clamp((x-2.*s)/s, 0., 1.);
+    float a3 = clamp((x-3.*s)/s, 0., 1.);
+
+//    vec3 c = (1. - a0)*c0 + a0 * (1-a1) * c1 + a1*(1-a2)*c2 + a2*(1.-a3)*c3+a3*c4; 
+    vec3 c = (1. - a0)*c0 + a0 * (1-a1) * c1 + a1*(1-a2)*c2 + a2*c3 + a3*c4; 
+    return vec4(c, 1.);
     return vec4(r, g, b, 1.0);
 }
 
@@ -127,11 +143,13 @@ void main(void) {
     if ( ! hit ) discard;
 
     // replace the constant 10 by the expectation of the number of photons on the ray ?
-    float opacity = clamp(accum/10, 0, 1);
+    float opacity = clamp(accum/10., 0., 1.);
 #ifdef USE_AS_TRANSPARENT
-    float w  = weight(gl_FragCoord.z, opacity);
-    f_Accumulation = colormap ( opacity  ) * opacity * w;
-    f_Revealage = vec4(opacity);
+    float w  = pow(opacity, 0.5)*100;//weight(gl_FragCoord.z, opacity);
+    f_Accumulation = colormap ( opacity  ) ;
+    f_Accumulation.a = smoothstep(opacity, 0.0, 0.1)*0.7;
+    f_Revealage = vec4(opacity*w);
+    f_Revealage = vec4(0.);
 #endif
 
 #ifdef USE_AS_OPAQUE
