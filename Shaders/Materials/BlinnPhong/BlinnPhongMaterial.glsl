@@ -30,11 +30,18 @@ struct Material
     float ns;
     float alpha;
 
+    int hasPerVertexKd;
+    int renderAsSplat;
+
     BlinnPhongTextures tex;
 };
 
 vec3 getKd(Material material, vec2 texCoord)
 {
+    if (material.hasPerVertexKd == 1)
+    {
+        return in_vertexcolor.xyz;
+    }
     if (material.tex.hasKd == 1)
     {
         return vec3(texture(material.tex.kd, texCoord));
@@ -89,6 +96,10 @@ bool toDiscard(Material material, vec2 texCoord)
         {
             return true;
         }
+    }
+    if ( material.renderAsSplat == 1)
+    {
+        return dot(texCoord, texCoord) > 1;
     }
     return false;
 }
