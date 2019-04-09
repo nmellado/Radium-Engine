@@ -22,10 +22,12 @@
 #include <Engine/Renderer/RenderTechnique/ShaderConfigFactory.hpp>
 #include <Engine/Renderer/Renderer.hpp>
 #include <Engine/System/GeometrySystem.hpp>
+#include <Engine/System/SequenceSystem.hpp>
 #include <GuiBase/Utils/KeyMappingManager.hpp>
 #include <GuiBase/Viewer/CameraInterface.hpp>
 #include <PluginBase/RadiumPluginInterface.hpp>
 
+#include <IO/SequenceLoader/SequenceLoader.hpp>
 #ifdef IO_USE_CAMERA_LOADER
 #    include <IO/CameraLoader/CameraLoader.hpp>
 #endif
@@ -208,6 +210,7 @@ BaseApplication::BaseApplication( int argc, char** argv, const WindowFactory& fa
 
     // Register the GeometrySystem converting loaded assets to meshes
     m_engine->registerSystem( "GeometrySystem", new Ra::Engine::GeometrySystem, 1000 );
+    m_engine->registerSystem( "SequenceSystem", new Ra::Engine::SequenceSystem, 1000 );
 
     Ra::Engine::RadiumEngine::getInstance()->getEntityManager()->createEntity( "Test" );
     // Load plugins
@@ -216,6 +219,9 @@ BaseApplication::BaseApplication( int argc, char** argv, const WindowFactory& fa
     {
         LOG( logERROR ) << "An error occurred while trying to load plugins.";
     }
+
+    m_engine->registerFileLoader(
+        std::shared_ptr<FileLoaderInterface>( new IO::SequenceFileLoader() ) );
 
     // Make builtin loaders the fallback if no plugins can load some file format
 #ifdef IO_USE_TINYPLY
@@ -243,7 +249,7 @@ BaseApplication::BaseApplication( int argc, char** argv, const WindowFactory& fa
     emit starting();
 
     // Files have been required, load them.
-    for(const auto& filename : parser.values( fileOpt ))
+    for ( const auto& filename : parser.values( fileOpt ) )
     {
         loadFile( filename );
     }
