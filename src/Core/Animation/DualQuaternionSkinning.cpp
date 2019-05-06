@@ -40,7 +40,8 @@ void computeDQ( const Pose& pose, const WeightMatrix& weight, DQList& DQ ) {
 
         for ( int nz = 0; nz < nonZero; ++nz )
         {
-            WeightMatrix::InnerIterator itn = it0 + Eigen::Index( nz );
+            WeightMatrix::InnerIterator itn = it0;
+            for(int i=0; i!=nz; ++i, ++itn) ;
             const uint i = itn.row();
             const Scalar w = itn.value();
 

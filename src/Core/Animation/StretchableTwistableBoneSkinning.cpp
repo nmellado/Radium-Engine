@@ -26,7 +26,8 @@ void RA_CORE_API linearBlendSkinningSTBS( const Vector3Array& inMesh, const Pose
 #pragma omp parallel for
         for ( int nz = 0; nz < nonZero; ++nz )
         {
-            WeightMatrix::InnerIterator it = it0 + Eigen::Index( nz );
+            WeightMatrix::InnerIterator it = it0;
+            for( int i = 0; i!= nz; i++, ++it) ;
             const uint i = it.row();
             const uint j = it.col();
             const Scalar w = it.value();
@@ -89,7 +90,8 @@ void computeDQSTBS( const Pose& pose, const Skeleton& poseSkel, const Skeleton& 
         // Loop through all vertices vi who depend on Tj
         for ( int nz = 0; nz < nonZero; ++nz )
         {
-            WeightMatrix::InnerIterator itn = it0 + Eigen::Index( nz );
+            WeightMatrix::InnerIterator itn = it0;
+            for( int i = 0; i!= nz; i++, ++itn) ;
             const uint i = itn.row();
             const uint j = itn.col();
             const Scalar w = itn.value();

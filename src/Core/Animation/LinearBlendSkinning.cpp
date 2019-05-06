@@ -15,7 +15,8 @@ void linearBlendSkinning( const Vector3Array& inMesh, const Pose& pose, const We
 #pragma omp parallel for
         for ( int nz = 0; nz < nonZero; ++nz )
         {
-            WeightMatrix::InnerIterator it = it0 + Eigen::Index( nz );
+            WeightMatrix::InnerIterator it = it0;
+            for(int i=0; i!=nz; ++i, ++it) ;
             const uint i = it.row();
             const uint j = it.col();
             const Scalar w = it.value();
