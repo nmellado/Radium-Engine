@@ -17,6 +17,22 @@ add_custom_target(update COMMENT "Updated all external projects")
 ExternalHeaderOnly_Add(Eigen
     "https://github.com/eigenteam/eigen-git-mirror.git" "branches/3.3" "")
 
+# Add fPIC for all dependencies
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
+#------------------------------------------------------------------------------
+# OpenMesh -> needs to be statically linked to get relocatable binaries (OpenMesh does not
+# support cmake imported targets
+ExternalDownloadNowGit(OpenMesh
+    https://www.graphics.rwth-aachen.de:9000/OpenMesh/OpenMesh.git
+    origin/master)
+add_subdirectory(${OpenMesh_SOURCE_DIR})
+# push back local variables to parent-scope
+set (OPENMESH_FOUND        ${OPENMESH_FOUND}        PARENT_SCOPE)
+set (OPENMESH_LIBRARIES    ${OPENMESH_LIBRARIES}    PARENT_SCOPE)
+set (OPENMESH_INCLUDE_DIR  ${OPENMESH_INCLUDE_DIR}  PARENT_SCOPE)
+set (OPENMESH_INCLUDE_DIRS ${OPENMESH_INCLUDE_DIRS} PARENT_SCOPE)
+
 #------------------------------------------------------------------------------
 # Examples of other external projects
 #------------------------------------------------------------------------------
