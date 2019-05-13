@@ -33,11 +33,11 @@ find_package(OpenMP QUIET)
 macro(addCommonDependencies TARGET)
   add_dependencies(${TARGET} versionFileTouchForRebuild) # We want precise time of build in version
   target_include_directories(${TARGET} PUBLIC ${RADIUM_SRC_DIR} )
-  target_link_libraries (${TARGET} PUBLIC Eigen)
+  target_link_libraries (${TARGET} PUBLIC INTERFACE Eigen)
   if(OPENMP_FOUND)
     target_link_libraries(${TARGET} PUBLIC OpenMP::OpenMP_CXX)
-  endif(OPENMP_FOUND)  
-  
+  endif(OPENMP_FOUND)
+
   # target_compile_definitions(${TARGET} PRIVATE -DSOME_DEFINE)
 endmacro()
 
@@ -46,7 +46,7 @@ add_subdirectory(Core)
 #add_subdirectory(Core)
 #add_subdirectory(Core)
 #add_subdirectory(Core)
-   
+
 
 # # #-------------------------------------------------------------------------------
 # # # exampleApp executable setup
@@ -116,9 +116,9 @@ add_subdirectory(Core)
 # target_link_libraries(exampleApp ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} )
 
 # How to use some other standard packages
-# find_package(ZLIB REQUIRED) 
+# find_package(ZLIB REQUIRED)
 # target_link_libraries (exampleApp PRIVATE ZLIB::ZLIB)
-# 
+#
 # find_package(OpenSSL REQUIRED)
 # target_link_libraries (exampleApp PRIVATE OpenSSL::SSL OpenSSL::Crypto)
 #

@@ -17,9 +17,9 @@ add_library(
 add_library(Radium::Core ALIAS ${ra_core_target})
 
 addCommonDependencies( ${ra_core_target} )
-add_dependencies     ( ${ra_core_target} OpenMeshCoreStatic OpenMeshToolsStatic )
+add_dependencies     ( ${ra_core_target} eigen OpenMeshCoreStatic OpenMeshToolsStatic )
 target_include_directories( ${ra_core_target} PUBLIC ${OPENMESH_INCLUDE_DIR} )
-target_link_libraries (${ra_core_target} PRIVATE OpenMeshCoreStatic OpenMeshToolsStatic)
+target_link_libraries (${ra_core_target} PRIVATE eigen OpenMeshCoreStatic OpenMeshToolsStatic)
 
 target_compile_definitions(${ra_core_target} PRIVATE "-DRA_CORE_EXPORTS")
 
