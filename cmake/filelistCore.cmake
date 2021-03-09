@@ -23,6 +23,7 @@ set( core_sources
     Geometry/Adjacency.cpp
     Geometry/Area.cpp
     Geometry/CatmullClarkSubdivider.cpp
+    Geometry/IndexedGeometry.cpp
     Geometry/HeatDiffusion.cpp
     Geometry/Laplacian.cpp
     Geometry/LoopSubdivider.cpp
@@ -93,6 +94,7 @@ set( core_headers
     Geometry/Curve2D.hpp
     Geometry/DistanceQueries.hpp
     Geometry/Frustum.hpp
+    Geometry/IndexedGeometry.hpp
     Geometry/HeatDiffusion.hpp
     Geometry/Laplacian.hpp
     Geometry/LoopSubdivider.hpp
