@@ -43,6 +43,9 @@ struct IndexView : public IndexViewBase {
 
     virtual IndexContainerType& collection()             = 0;
     virtual const IndexContainerType& collection() const = 0;
+
+  protected:
+    inline IndexView( const std::string& viewName ) : IndexViewBase( viewName ) {}
 };
 
 /// \brief Helper class that store a colletion of indices
@@ -119,6 +122,20 @@ class RA_CORE_API MultiIndexedGeometry : public AttribArrayGeometry, public Util
     // Collection of pairs <lockStatus, Indices>
     std::map<std::string, std::pair<bool, IndexViewBase>> m_indices;
 };
+
+struct RA_CORE_API PointCloudIndexView : public IndexViewCollectionHelper<Vector1ui> {
+    inline PointCloudIndexView() : IndexViewCollectionHelper( "IndexPointCloud" ) {};
+};
+
+struct RA_CORE_API TriangleIndexView : public IndexViewCollectionHelper<Vector3ui> {
+    inline TriangleIndexView() : IndexViewCollectionHelper( "TriangleMesh" ) {};
+};
+
+// class RA_CORE_API PolyIndexView : public IndexViewCollectionHelper<VectorNui>
+// {};
+
+// class RA_CORE_API LineIndexView : public IndexViewCollectionHelper<Vector2ui>
+// {};
 
 } // namespace Geometry
 } // namespace Core
