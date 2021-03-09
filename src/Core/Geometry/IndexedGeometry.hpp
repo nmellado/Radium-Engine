@@ -39,10 +39,30 @@ class RA_CORE_API IndexViewBase : public Utils::ObservableVoid
 template <typename T>
 struct IndexView : public IndexViewBase {
     using IndexType          = T;
-    using IndexContainerType = AlignedStdVector<IndexType>;
+    using IndexContainerType = VectorArray<IndexType>;
 
     virtual IndexContainerType& collection()             = 0;
     virtual const IndexContainerType& collection() const = 0;
+};
+
+/// \brief Helper class that store a colletion of indices
+template <typename T>
+class IndexViewCollectionHelper : public IndexView<T>
+{
+    using Base = IndexView<T>;
+
+  public:
+    using IndexType          = typename Base::IndexType;
+    using IndexContainerType = typename Base::IndexContainerType;
+
+    virtual inline IndexContainerType& collection() { return _collection; };
+    virtual const IndexContainerType& collection() const { return _collection; };
+
+  protected:
+    inline IndexViewCollectionHelper( const std::string& viewName ) : Base( viewName ) {}
+
+  private:
+    IndexContainerType _collection;
 };
 
 /// Simple Mesh structure that handles indexed geometry with vertex
