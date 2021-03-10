@@ -2,6 +2,7 @@
 
 #include <Core/Containers/VectorArray.hpp>
 #include <Core/Geometry/TriangleMesh.hpp>
+#include <Core/Utils/ObjectWithSemantic.hpp>
 #include <map>
 
 namespace Ra {
@@ -10,29 +11,29 @@ namespace Geometry {
 
 ///
 /// \brief Base class for index collections stored in MultiIndexedGeometry
-/// The name of an IndexView is consistent with its type and semantic.
-class RA_CORE_API IndexViewBase : public Utils::ObservableVoid
+class RA_CORE_API IndexViewBase : public Utils::ObservableVoid, public Utils::ObjectWithSemantic
 {
   public:
-    inline explicit IndexViewBase( const IndexViewBase& other ) : _viewName( other._viewName ) {}
+    inline explicit IndexViewBase( const IndexViewBase& other ) :
+        ObjectWithSemantic( other.semantics() ) {}
 
-    inline IndexViewBase( IndexViewBase&& other ) : _viewName( other._viewName ) {}
+    // inline IndexViewBase( IndexViewBase&& other ) : x§ObjectWithSemantic( other ) {}
     inline IndexViewBase& operator=( const IndexViewBase& other ) {
-        CORE_ASSERT( _viewName == other._viewName, "Try to assign IndexView of different type" );
+        CORE_UNUSED( other );
+        CORE_ASSERT( semantics() == other.semantics(),
+                     "Try to assign object with different semantics" );
         return *this;
     }
     inline IndexViewBase& operator=( IndexViewBase&& other ) {
-        CORE_ASSERT( _viewName == other._viewName, "Try to assign IndexView of different type" );
+        CORE_UNUSED( other );
+        CORE_ASSERT( semantics() == other.semantics(),
+                     "Try to assign IndexView of different type" );
         return *this;
     }
 
-    inline const std::string& viewName() const { return _viewName; }
-
   protected:
-    inline IndexViewBase( const std::string& viewName ) : _viewName( viewName ) {}
-
-  private:
-    const std::string _viewName;
+    template <class... SemanticNames>
+    inline IndexViewBase( SemanticNames... names ) : ObjectWithSemantic( names... ) {}
 };
 
 /// \brief Typed index collection
@@ -45,7 +46,8 @@ struct IndexView : public IndexViewBase {
     const IndexContainerType& collection() const { return _collection; };
 
   protected:
-    inline IndexView( const std::string& viewName ) : IndexViewBase( viewName ) {}
+    template <class... SemanticNames>
+    inline IndexView( SemanticNames... names ) : IndexViewBase( names... ) {}
 
   private:
     IndexContainerType _collection;
@@ -56,6 +58,9 @@ struct IndexView : public IndexViewBase {
 class RA_CORE_API MultiIndexedGeometry : public AttribArrayGeometry, public Utils::ObservableVoid
 {
   public:
+    using IndicesSemanticCollection = Utils::ObjectWithSemantic::SemanticNameCollection;
+    using IndicesSemantic           = Utils::ObjectWithSemantic::SemanticName;
+
     inline MultiIndexedGeometry() = default;
     explicit MultiIndexedGeometry( const MultiIndexedGeometry& other );
     explicit MultiIndexedGeometry( MultiIndexedGeometry&& other );
@@ -79,22 +84,39 @@ class RA_CORE_API MultiIndexedGeometry : public AttribArrayGeometry, public Util
     // /// \warning There is no error check on the handles attribute type.
     // inline bool append( const MultiIndexedGeometry& other );
 
-    /// read only access to indices
-    bool indicesExists( const std::string& name ) const;
+    // /// search if at least one index exists with this Semantic
+    // bool indicesExists( const IndicesSemantic& semanticName ) const;
+
+    /// search if at least one index exists with this Semantic
+    bool indicesExists( const IndicesSemanticCollection& semantics ) const;
+
+    // /// read only access to indices
+    // /// \throws std::out_of_range
+    // const IndexViewBase& getIndices( const IndicesSemantic& semanticName ) const;
 
     /// read only access to indices
     /// \throws std::out_of_range
-    const IndexViewBase& getIndices( const std::string& name ) const;
+    const IndexViewBase& getIndices( const IndicesSemanticCollection& semantics ) const;
+
+    // /// read write access to indices.
+    // /// Cause indices to be "lock" for the caller
+    // /// need to be unlock by the caller before any one can ask for write access.
+    // /// \throws std::out_of_range
+    // IndexViewBase& getIndicesWithLock( const IndicesSemantic& name );
 
     /// read write access to indices.
     /// Cause indices to be "lock" for the caller
     /// need to be unlock by the caller before any one can ask for write access.
     /// \throws std::out_of_range
-    IndexViewBase& getIndicesWithLock( const std::string& name );
+    IndexViewBase& getIndicesWithLock( const IndicesSemanticCollection& name );
+
+    // /// unlock previously read write acces, notify observers of the update.
+    // /// \throws std::out_of_range
+    // void indicesUnlock( const IndicesSemantic& name );
 
     /// unlock previously read write acces, notify observers of the update.
     /// \throws std::out_of_range
-    void indicesUnlock( const std::string& name );
+    void indicesUnlock( const IndicesSemanticCollection& name );
 
     // /// set indices. Indices must be unlock, i.e. no one should have write
     // /// access to it.
@@ -105,7 +127,7 @@ class RA_CORE_API MultiIndexedGeometry : public AttribArrayGeometry, public Util
 
   private:
     // Collection of pairs <lockStatus, Indices>
-    std::map<std::string, std::pair<bool, IndexViewBase>> m_indices;
+    std::map<IndicesSemanticCollection, std::pair<bool, IndexViewBase>> m_indices;
 };
 
 struct RA_CORE_API PointCloudIndexView : public IndexView<Vector1ui> {

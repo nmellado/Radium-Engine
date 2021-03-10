@@ -96,38 +96,40 @@ void MultiIndexedGeometry::checkConsistency() const {
 //     return true;
 // }
 
-bool MultiIndexedGeometry::indicesExists( const std::string& name ) const {
-    return m_indices.find( name ) != m_indices.end();
+bool MultiIndexedGeometry::indicesExists( const IndicesSemanticCollection& semantics ) const {
+    return m_indices.find( semantics ) != m_indices.end();
 }
 
-const IndexViewBase& MultiIndexedGeometry::getIndices( const std::string& name ) const {
-    return m_indices.at( name ).second;
+const IndexViewBase&
+MultiIndexedGeometry::getIndices( const IndicesSemanticCollection& semantics ) const {
+    return m_indices.at( semantics ).second;
 }
 
-IndexViewBase& MultiIndexedGeometry::getIndicesWithLock( const std::string& name ) {
-    auto& p = m_indices.at( name );
+IndexViewBase&
+MultiIndexedGeometry::getIndicesWithLock( const IndicesSemanticCollection& semantics ) {
+    auto& p = m_indices.at( semantics );
     CORE_ASSERT( !p.first, "try to get already locked indices" );
     p.first = true;
     return p.second;
 }
 
-void MultiIndexedGeometry::indicesUnlock( const std::string& name ) {
-    auto& p = m_indices.at( name );
+void MultiIndexedGeometry::indicesUnlock( const IndicesSemanticCollection& semantics ) {
+    auto& p = m_indices.at( semantics );
     CORE_ASSERT( p.first, "try to unlock not locked indices" );
     p.first = false;
     notify();
 }
 
 void MultiIndexedGeometry::setIndices( const IndexViewBase& indices ) {
-    const std::string& name = indices.viewName();
-    auto it                 = m_indices.find( name );
+    const auto& key = indices.semantics();
+    auto it         = m_indices.find( key );
     if ( it != m_indices.end() )
     {
         CORE_ASSERT( !( *it ).second.first, "try to set already locked indices" );
         ( *it ).second.second = std::move( indices );
     }
     else
-        m_indices.insert( {name, std::make_pair( false, std::move( indices ) )} );
+        m_indices.insert( {key, std::make_pair( false, std::move( indices ) )} );
     notify();
 }
 
