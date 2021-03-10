@@ -41,28 +41,11 @@ struct IndexView : public IndexViewBase {
     using IndexType          = T;
     using IndexContainerType = VectorArray<IndexType>;
 
-    virtual IndexContainerType& collection()             = 0;
-    virtual const IndexContainerType& collection() const = 0;
+    inline IndexContainerType& collection() { return _collection; };
+    const IndexContainerType& collection() const { return _collection; };
 
   protected:
     inline IndexView( const std::string& viewName ) : IndexViewBase( viewName ) {}
-};
-
-/// \brief Helper class that store a colletion of indices
-template <typename T>
-class IndexViewCollectionHelper : public IndexView<T>
-{
-    using Base = IndexView<T>;
-
-  public:
-    using IndexType          = typename Base::IndexType;
-    using IndexContainerType = typename Base::IndexContainerType;
-
-    virtual inline IndexContainerType& collection() { return _collection; };
-    virtual const IndexContainerType& collection() const { return _collection; };
-
-  protected:
-    inline IndexViewCollectionHelper( const std::string& viewName ) : Base( viewName ) {}
 
   private:
     IndexContainerType _collection;
@@ -125,12 +108,12 @@ class RA_CORE_API MultiIndexedGeometry : public AttribArrayGeometry, public Util
     std::map<std::string, std::pair<bool, IndexViewBase>> m_indices;
 };
 
-struct RA_CORE_API PointCloudIndexView : public IndexViewCollectionHelper<Vector1ui> {
-    inline PointCloudIndexView() : IndexViewCollectionHelper( "IndexPointCloud" ) {};
+struct RA_CORE_API PointCloudIndexView : public IndexView<Vector1ui> {
+    inline PointCloudIndexView() : IndexView( "IndexPointCloud" ) {};
 };
 
-struct RA_CORE_API TriangleIndexView : public IndexViewCollectionHelper<Vector3ui> {
-    inline TriangleIndexView() : IndexViewCollectionHelper( "TriangleMesh" ) {};
+struct RA_CORE_API TriangleIndexView : public IndexView<Vector3ui> {
+    inline TriangleIndexView() : IndexView( "TriangleMesh" ) {};
 };
 
 // class RA_CORE_API PolyIndexView : public IndexViewCollectionHelper<VectorNui>
