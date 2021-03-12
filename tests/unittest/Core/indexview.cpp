@@ -1,31 +1,68 @@
-#include <Core/Geometry/MeshPrimitives.hpp>
 #include <Core/Geometry/IndexedGeometry.hpp>
+#include <Core/Geometry/MeshPrimitives.hpp>
 #include <catch2/catch.hpp>
+
+struct CustomTriangleIndexLayer : public Ra::Core::Geometry::TriangleIndexLayer {
+    inline CustomTriangleIndexLayer() :
+        Ra::Core::Geometry::TriangleIndexLayer( "CustomSemantic" ) {}
+};
 
 TEST_CASE( "Core/Geometry/IndexedGeometry", "[Core][Core/Geometry][IndexedGeometry]" ) {
     using Ra::Core::Vector3;
     using Ra::Core::Geometry::AttribArrayGeometry;
     using Ra::Core::Geometry::MultiIndexedGeometry;
+    using Ra::Core::Geometry::PointCloudIndexLayer;
+    using Ra::Core::Geometry::TriangleIndexLayer;
     using Ra::Core::Geometry::TriangleMesh;
-    using Ra::Core::Geometry::TriangleIndexView;
-    using Ra::Core::Geometry::PointCloudIndexView;
 
-    TriangleMesh mesh = Ra::Core::Geometry::makeBox();;
+    TriangleMesh mesh = Ra::Core::Geometry::makeBox();
+    ;
 
     // copy AttribArrayGeometry;
-    MultiIndexedGeometry indexedGeometry( mesh );
+    MultiIndexedGeometry geo( mesh );
 
     // copy triangle indices
-    TriangleIndexView tiv;
-    tiv.collection() = mesh.getIndices();
-    indexedGeometry.setIndices( tiv );
+    TriangleIndexLayer til;
+    til.collection() = mesh.getIndices();
+    geo.setLayer( til );
 
-    // generate indexedPointCloud indices
-    auto nbVert = mesh.vertices().size();
-    PointCloudIndexView piv;
-    piv.collection().resize( nbVert );
-    piv.collection().getMap() = PointCloudIndexView::IndexContainerType::Matrix::LinSpaced(nbVert, 0, nbVert-1);
-    indexedGeometry.setIndices( piv );
+    //! [Creating and adding pointcloud layer]
+    Ra::Core::Geometry::PointCloudIndexLayer pil;
+    // fill indices as linspace
+    pil.generateIndicesFromAttributes( geo );
+    // insert with default name
+    geo.setLayer( pil );
+    //! [Creating and adding pointcloud layer]
+
+    REQUIRE( geo.containsLayer( til.semantics() ) );
+    REQUIRE( geo.containsLayer( pil.semantics() ) );
+    REQUIRE( geo.containsLayer( "TriangleMesh" ) );
+    REQUIRE( geo.containsLayer( "IndexPointCloud" ) );
+
+    REQUIRE( geo.countLayers( til.semantics() ) == 1 );
+    REQUIRE( geo.countLayers( pil.semantics() ) == 1 );
+    REQUIRE( geo.countLayers( "TriangleMesh" ) == 1 );
+    REQUIRE( geo.countLayers( "IndexPointCloud" ) == 1 );
+
+    // copy triangle indices
+    CustomTriangleIndexLayer cil;
+    cil.collection() = mesh.getIndices();
+
+    REQUIRE( !geo.containsLayer( cil.semantics() ) );
+    REQUIRE( geo.countLayers( cil.semantics() ) == 0 );
+
+    geo.setLayer( cil );
+
+    REQUIRE( geo.containsLayer( cil.semantics() ) );
+    REQUIRE( geo.containsLayer( "TriangleMesh" ) );
+    REQUIRE( geo.containsLayer( "IndexPointCloud" ) );
+    REQUIRE( geo.containsLayer( "CustomSemantic" ) );
+
+    REQUIRE( geo.countLayers( til.semantics() ) == 1 );
+    REQUIRE( geo.countLayers( pil.semantics() ) == 1 );
+    REQUIRE( geo.countLayers( "TriangleMesh" ) == 2 );
+    REQUIRE( geo.countLayers( "IndexPointCloud" ) == 1 );
+    REQUIRE( geo.countLayers( "CustomSemantic" ) == 1 );
 
     // // base attributes are automatically added
     // auto h_pos = mesh.getAttribHandle<Vector3>( "in_position" );
@@ -171,7 +208,8 @@ TEST_CASE( "Core/Geometry/IndexedGeometry", "[Core][Core/Geometry][IndexedGeomet
     // REQUIRE( m2.getAttrib( handle2 ).data() == newData );
 }
 
-// TEST_CASE( "Core/Geometry/TriangleMesh/CopyAllAttributes", "[Core][Core/Geometry][TriangleMesh]" ) {
+// TEST_CASE( "Core/Geometry/TriangleMesh/CopyAllAttributes", "[Core][Core/Geometry][TriangleMesh]"
+// ) {
 //     using Ra::Core::Vector2;
 //     using Ra::Core::Vector3;
 //     using Ra::Core::Geometry::TriangleMesh;
