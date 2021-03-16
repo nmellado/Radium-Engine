@@ -22,16 +22,16 @@ TEST_CASE( "Core/Geometry/IndexedGeometry", "[Core][Core/Geometry][IndexedGeomet
     MultiIndexedGeometry geo( mesh );
 
     // copy triangle indices
-    TriangleIndexLayer* til = new TriangleIndexLayer;
-    til->collection()       = mesh.getIndices();
-    geo.addLayer( til );
+    auto til = std::make_unique<TriangleIndexLayer>();
+    til->collection() = mesh.getIndices();
+    geo.addLayer( std::move( til ) );
 
     //! [Creating and adding pointcloud layer]
-    Ra::Core::Geometry::PointCloudIndexLayer* pil = new Ra::Core::Geometry::PointCloudIndexLayer;
+    auto pil = std::make_unique<Ra::Core::Geometry::PointCloudIndexLayer>();
     // fill indices as linspace
     pil->generateIndicesFromAttributes( geo );
     // insert with default name
-    geo.addLayer( pil );
+    geo.addLayer( std::move( pil ) );
     //! [Creating and adding pointcloud layer]
 
     REQUIRE( geo.containsLayer( til->semantics() ) );
@@ -45,13 +45,13 @@ TEST_CASE( "Core/Geometry/IndexedGeometry", "[Core][Core/Geometry][IndexedGeomet
     REQUIRE( geo.countLayers( "IndexPointCloud" ) == 1 );
 
     // copy triangle indices
-    CustomTriangleIndexLayer* cil = new CustomTriangleIndexLayer;
+    auto cil = std::make_unique<CustomTriangleIndexLayer>();
     cil->collection()             = mesh.getIndices();
 
     REQUIRE( !geo.containsLayer( cil->semantics() ) );
     REQUIRE( geo.countLayers( cil->semantics() ) == 0 );
 
-    geo.addLayer( cil );
+    geo.addLayer( std::move( cil ) );
 
     REQUIRE( geo.containsLayer( cil->semantics() ) );
     REQUIRE( geo.containsLayer( "TriangleMesh" ) );
