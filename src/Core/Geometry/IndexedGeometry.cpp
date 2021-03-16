@@ -5,8 +5,13 @@ namespace Ra {
 namespace Core {
 namespace Geometry {
 
+/// \fixme Deep copy
 MultiIndexedGeometry::MultiIndexedGeometry( const MultiIndexedGeometry& other ) :
-    AttribArrayGeometry( other ), m_indices( other.m_indices ) {}
+    AttribArrayGeometry( other ), m_indices( other.m_indices ) {
+#ifdef MULTI_INDEX_MIMIC_TRIANGLE_MESH
+    setIndices( {} ); // force create of trianglemesh layer
+#endif
+}
 
 /// \fixme Deep copy
 MultiIndexedGeometry::MultiIndexedGeometry( MultiIndexedGeometry&& other ) :
@@ -51,6 +56,15 @@ void MultiIndexedGeometry::copy( const MultiIndexedGeometry& other ) {
 void MultiIndexedGeometry::checkConsistency() const {
 #ifdef CORE_DEBUG
 #endif
+}
+
+#ifdef MULTI_INDEX_MIMIC_TRIANGLE_MESH
+bool
+#else
+void
+#endif
+/// \todo Implement MultiIndexedGeometry::append
+MultiIndexedGeometry::append( const MultiIndexedGeometry& other ) {
 }
 
 //////////////////////////////////////////////////////////////////////
