@@ -22,44 +22,44 @@ TEST_CASE( "Core/Geometry/IndexedGeometry", "[Core][Core/Geometry][IndexedGeomet
     MultiIndexedGeometry geo( mesh );
 
     // copy triangle indices
-    TriangleIndexLayer til;
-    til.collection() = mesh.getIndices();
-    geo.setLayer( til );
+    TriangleIndexLayer* til = new TriangleIndexLayer;
+    til->collection()       = mesh.getIndices();
+    geo.addLayer( til );
 
     //! [Creating and adding pointcloud layer]
-    Ra::Core::Geometry::PointCloudIndexLayer pil;
+    Ra::Core::Geometry::PointCloudIndexLayer* pil = new Ra::Core::Geometry::PointCloudIndexLayer;
     // fill indices as linspace
-    pil.generateIndicesFromAttributes( geo );
+    pil->generateIndicesFromAttributes( geo );
     // insert with default name
-    geo.setLayer( pil );
+    geo.addLayer( pil );
     //! [Creating and adding pointcloud layer]
 
-    REQUIRE( geo.containsLayer( til.semantics() ) );
-    REQUIRE( geo.containsLayer( pil.semantics() ) );
+    REQUIRE( geo.containsLayer( til->semantics() ) );
+    REQUIRE( geo.containsLayer( pil->semantics() ) );
     REQUIRE( geo.containsLayer( "TriangleMesh" ) );
     REQUIRE( geo.containsLayer( "IndexPointCloud" ) );
 
-    REQUIRE( geo.countLayers( til.semantics() ) == 1 );
-    REQUIRE( geo.countLayers( pil.semantics() ) == 1 );
+    REQUIRE( geo.countLayers( til->semantics() ) == 1 );
+    REQUIRE( geo.countLayers( pil->semantics() ) == 1 );
     REQUIRE( geo.countLayers( "TriangleMesh" ) == 1 );
     REQUIRE( geo.countLayers( "IndexPointCloud" ) == 1 );
 
     // copy triangle indices
-    CustomTriangleIndexLayer cil;
-    cil.collection() = mesh.getIndices();
+    CustomTriangleIndexLayer* cil = new CustomTriangleIndexLayer;
+    cil->collection()             = mesh.getIndices();
 
-    REQUIRE( !geo.containsLayer( cil.semantics() ) );
-    REQUIRE( geo.countLayers( cil.semantics() ) == 0 );
+    REQUIRE( !geo.containsLayer( cil->semantics() ) );
+    REQUIRE( geo.countLayers( cil->semantics() ) == 0 );
 
-    geo.setLayer( cil );
+    geo.addLayer( cil );
 
-    REQUIRE( geo.containsLayer( cil.semantics() ) );
+    REQUIRE( geo.containsLayer( cil->semantics() ) );
     REQUIRE( geo.containsLayer( "TriangleMesh" ) );
     REQUIRE( geo.containsLayer( "IndexPointCloud" ) );
     REQUIRE( geo.containsLayer( "CustomSemantic" ) );
 
-    REQUIRE( geo.countLayers( til.semantics() ) == 1 );
-    REQUIRE( geo.countLayers( pil.semantics() ) == 1 );
+    REQUIRE( geo.countLayers( til->semantics() ) == 1 );
+    REQUIRE( geo.countLayers( pil->semantics() ) == 1 );
     REQUIRE( geo.countLayers( "TriangleMesh" ) == 2 );
     REQUIRE( geo.countLayers( "IndexPointCloud" ) == 1 );
     REQUIRE( geo.countLayers( "CustomSemantic" ) == 1 );
