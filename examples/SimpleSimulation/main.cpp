@@ -1,4 +1,6 @@
 // Include Radium base application and its simple Gui
+#include "Core/Geometry/IndexedGeometry.hpp"
+#include "Engine/Data/Mesh.hpp"
 #include <Gui/BaseApplication.hpp>
 #include <Gui/RadiumWindow/SimpleWindowFactory.hpp>
 
@@ -15,7 +17,7 @@
 
 class SimpleSimulationSystem : public Ra::Engine::Scene::System
 {
-    Ra::Engine::Data::PointCloud* m_cloud;
+    Ra::Engine::Data::IndexedPointCloud* m_cloud;
     const std::string colorHandleName =
         Ra::Core::Geometry::getAttribName( Ra::Core::Geometry::MeshAttrib::VERTEX_COLOR );
 
@@ -26,7 +28,7 @@ class SimpleSimulationSystem : public Ra::Engine::Scene::System
     }
 
   public:
-    inline SimpleSimulationSystem( Ra::Engine::Data::PointCloud* c = nullptr ) : m_cloud( c ) {}
+    inline SimpleSimulationSystem( Ra::Engine::Data::IndexedPointCloud* c = nullptr ) : m_cloud( c ) {}
 
     virtual void generateTasks( Ra::Core::TaskQueue* q,
                                 const Ra::Engine::FrameInfo& /*info*/ ) override {
@@ -62,7 +64,7 @@ int main( int argc, char* argv[] ) {
     //! [Creating the application]
 
     //! [Creating the cloud]
-    auto cloud = Ra::Core::Geometry::PointCloud();
+    auto cloud = Ra::Core::Geometry::IndexedPointCloud();
     auto& v    = cloud.verticesWithLock();
     v.resize( 100 );
     for ( auto& x : v )
